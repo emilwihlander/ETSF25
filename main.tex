@@ -5,6 +5,7 @@
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
+\usepackage{seqsplit}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -31,13 +32,17 @@ To be written.
 \end{abstract}
 
 \section{Introduction}
-Autonomous cars (i. e. self-driving cars) is right around the corner whether we like it or not. Will it revolutionize the world or not? Who knows, what we do know is that the development had to start somewhere. One piece of the puzzle is to make the car have a automatic brake system. In reality, a car will automatically brake if there is an object (e. g. cyclist, fallen tree, pedestrian) in front of the vehicle to prevent accidents. 
+Autonomous vehicles (i.e.\ self-driving cars) are right around the corner with Volvo Cars aiming for a 2021 release to market.\cite{ADToMarket} Will it revolutionize the world or not? Who knows, what we do know is that the development had to start somewhere. One piece of the puzzle is to make the car have an automatic brake system to assist the driver to avoid/mitigate hazardous situations. 
 
-Let's take an example. Imagine that you are driving in the suburbs when suddenly a child accidentally kicks a ball onto the streets. The kid make a run for the ball, not aware of it's surroundings. You hit the brakes as hard as you possibly can, but it's too late. The kid heavily injured. Now picture the same scenario with a automatic brake system. The car would this time be able to stop, by itself, in time and the kid is not harmed.
+For example, imagine a car driving in the suburbs when suddenly a child accidentally kicks a ball onto the streets. The child makes a run for the ball, not aware of it's surroundings. The driver brakes, but it's due to reaction time of the driver the kid gets heavily injured. Now picture the same scenario with a automatic brake system. The car would be able to stop, by itself, in time and the accident would be avoided considering the car has (close to) no reaction time.
 
-Mankind is constantly trying to invent devices or systems that are able to the remove the most hazardous factor, human error. Automatic braking is an example of that. 
+Another possible scenario is that the driver crashes into the rear-end of the car in front due to inattention.
+
+With the driver being responsible for approximately 94\% of all car crashes, Volvo Cars with it's three key values, Environment, Quality and Safety, see great value in reducing those types of accidents.\cite{CrashStats,VolvoValues}
 
 \subsection{Volvo Cars}
+Volvo Cars currently maintain several systems which contain some sort of automatic braking, ``City Safety'' for pre-SPA\footnote{SPA - Scalable Product Architecture, the platform on which all new cars since Volvo XC90 II (2014) are built on.} cars, ``Collision Warning with Auto Brake and Cyclist and Pedestrian Detection'' and ``City Safety'' for SPA cars.\cite{CitySafety,Collision,CitySafety2} 
+
 \subsubsection{General information}
 \subsubsection{Technical progress}
 
@@ -168,6 +173,12 @@ Zenuity Stuff\\\\
 \section{Summary}
 
 \begin{thebibliography}{00}
+	\bibitem{ADToMarket} Volvocars.com. (2017). Autonomous Driving | Intellisafe | Volvo Cars. [online] Available at: https://www.volvocars.com/intl/about/our-innovation-brands/intellisafe/autonomous-driving [Accessed 12 Nov. 2017].
+	\bibitem{Collision} Support.volvocars.com. (2017). Collision warning system* - function. [online] Available at: \seqsplit{http://support.volvocars.com/uk/cars/Pages/owners-manual.aspx?mc=Y556\&my=2015\&sw=14w46\&article=6b05565d0cb2e4c5c0a801e8011ef5bc} [Accessed 12 Nov. 2017].
+	\bibitem{CitySafety}Support.volvocars.com. (2017). City Safety - function. [online] Available at: \seqsplit{http://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=Y556\&my=2015\&sw=14w46\&article=981aefa30d3c87d1c0a801e800aa42f9} [Accessed 12 Nov. 2017].
+	\bibitem{CitySafety2} Support.volvocars.com. (2017). City Safety. [online] Available at: \seqsplit{http://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=v542\&my=2018\&sw=17w17\&article=dedd207c897617ddc0a801514bfcc7b4} [Accessed 12 Nov. 2017].
+	\bibitem{CrashStats} NHTSA. (2015). Critical Reasons for Crashes Investigated in the National Motor Vehicle Crash Causation Survey. [online] Available at: \seqsplit{https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812115} [Accessed 12 Nov. 2017].
+	\bibitem{VolvoValues} Volvo Car Group. (2017). Company | Volvo Car Group. [online] Available at: https://group.volvocars.com/company [Accessed 12 Nov. 2017].
 	\bibitem{b1}  Mobileye. (2017) Industry Firsts. [Online]. Available: http://www.mobileye.com/about/industry-firsts/
 	\bibitem{b2} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars
 	\bibitem{b3} Volvo Car Corporation. (2017, January). [Online]. Available: https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity
