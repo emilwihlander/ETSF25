@@ -22,7 +22,8 @@ function git_status {
 
 echo -e "**********Compiling to pdf...\n"
 # 2. Compiles tex-files to pdf
-# pdflatex *.tex
+pdflatex *.tex 1>/dev/null 
+rm *.aux *.log
 echo -e "\n**********Done compiling.\n"
 
 # 3. Executes the function git_status
