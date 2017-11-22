@@ -35,3 +35,6 @@ echo -e "\n**********Added tex- and pdf-files to git.\n"
 
 # 5. Executes the function git_status
 git_status
+
+# 6. Commit
+# git commit
