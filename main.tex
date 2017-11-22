@@ -31,6 +31,10 @@ dat15jh1@student.lu.se}
 To be written.
 \end{abstract}
 
+% ---------------------------------------------------------
+% ------------------- Introduction  -----------------------
+% ---------------------------------------------------------
+
 \section{Introduction}
 Autonomous vehicles (i.e.\ self-driving cars) are right around the corner with Volvo Cars aiming for a 2021 release to market.\cite{ADToMarket} Will it revolutionize the world or not? Who knows, what we do know is that the development had to start somewhere. One piece of the puzzle is to make the car have an automatic brake system to assist the driver to avoid/mitigate hazardous situations. 
 
@@ -78,11 +82,14 @@ A computer program claimed by itself is not excluded from patentability if the p
 \end{quotation} 
 
 To summarize, one can not patent the software program code itself, but with some kind of hardware it is possible.
-\subsubsection{Volvo's Patents}
 \subsection{Big Data}
 Nowadays a company's big struggle is not to store all collected data, it is how to use it. The data is called ``Big Data''. \cite{ExploitBigData}
 
 Depending on the software, the collected data could be commute patterns, phone usage or as simple as the amount of user. With this kind of information the company can make smart decisions. The downside is, the more data one got, the harder it is to process. To take fully advantage of the stored information the processing velocity is key. Another problem is the variety of data a company got. What information is in reality useful? \cite{SpeedDataEco} % TODO: Utveckla mer
+
+% ---------------------------------------------------------
+% --------------Description of the system  ----------------
+% ---------------------------------------------------------
 
 \section{Description of the system}
 \begin{itemize}
@@ -92,8 +99,17 @@ Depending on the software, the collected data could be commute patterns, phone u
 	\item Ground truth, inhouse data, move to neural networks -> user data (big data).
 	\item 2017 moved ADAS to new joint venture Zenuity w/ autoliv. https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity
 \end{itemize}
-
+% ---------------------------------------------------------
+% ------------------- Business Aspects  -------------------
+% ---------------------------------------------------------
 \section{Business aspects}
+Volvo Cars is a huge company and hence, there is a lot of business aspects to cover.
+
+The automatic brake system is not OSS which mean the software is disclosed. This seems peculiar considering Volvo Cars history of sharing safety features. What this implies is: Volvo need differentiation. When Volvo back in the days shared the three-point safety belt it was easier to differentiate whereas today it is harder to separate one car brand from another, apart from design and trademark. Nowadays there are some ways to differentiate, e.g. price, reputation, specifications (top velocity, acceleration) or safety. This could be the reason why Volvo is not making the automatic brake system OSS, to have some kind of uniqueness and to strengthen the brand's reputation, i.e. safety first. \cite{VolvoVision}
+
+Why is uniqueness of great importance? Lets take an example. If there were two jumpers in the same color, same price and same size, the only difference is the brand. Which jumper would one chose? In this case the brand's reputation would be the only thing that mattered. Imagine the same example, but, the brand is the same and the price is different. Now the answer is more obvious, one would purchase the cheaper jumper. Now consider this, combine the two examples above. Two jumpers with same color and same size but with different brand and price. Harder decision has to be made, pay a higher price for a brand or pay less for another. Depends on the reputation, if the pricier jumper's company has a reputation of having better quality, the extra charge might be worth it. If we apply these examples to cars instead. Volvo is trying to make the customer consider safety of the car rather then just performance or price. When a customer is considering the safety of the car, it is already a win but this how Volvo can make a profit.
+
+No patent could be find of Volvo's automatic brake system.
 \subsubsection{Volvo's Business Plan}
 \subsubsection{Business Idea}
 \begin{itemize}
@@ -124,6 +140,11 @@ Depending on the software, the collected data could be commute patterns, phone u
 	\item Lines up with goal to be seen as part of the premium segment.
 	\item Open Source Software
 \end{itemize}
+
+% ---------------------------------------------------------
+% ------------------- Ethical Aspects  --------------------
+% ---------------------------------------------------------
+
 \section{Ethical aspects}
 \begin{itemize}
 	\item Data collection.
@@ -134,6 +155,10 @@ Depending on the software, the collected data could be commute patterns, phone u
 	\end{quotation}
 \end{itemize}
 
+% ---------------------------------------------------------
+% ------------------- Legal Aspects  ----------------------
+% ---------------------------------------------------------
+
 \section{Legal aspects}
 \begin{itemize}
 	\item Data collection.
@@ -141,6 +166,10 @@ Depending on the software, the collected data could be commute patterns, phone u
 	\item missed brake.
 	\item Open Source Software
 \end{itemize}
+
+% ---------------------------------------------------------
+% ------------------- Summary  --------------------------
+% ---------------------------------------------------------
 
 \section{Summary}
 
@@ -151,6 +180,10 @@ Depending on the software, the collected data could be commute patterns, phone u
 	\item J. Bosch. Speed, data, and ecosystems: the future of software engineering. IEEE Software 33.1 pp. 82-88. 2016
 	\item H. Holmstr\"{o}m Olsson and J. Bosch, From ad hoc to strategic ecosystem managment: the "Three-Layer Ecosystem Strategy Model" (TeLESM). J of Soft Evolution and Process, 29(7), July 2017
 \end{itemize}
+
+% ---------------------------------------------------------
+% ------------------- References  -------------------------
+% ---------------------------------------------------------
 
 \begin{thebibliography}{00}
 	\bibitem{ADToMarket} Volvocars.com. (2017). Autonomous Driving | Intellisafe | Volvo Cars. [online] Available at: https://www.volvocars.com/intl/about/our-innovation-brands/intellisafe/autonomous-driving [Accessed 12 Nov. 2017].
@@ -165,6 +198,7 @@ Depending on the software, the collected data could be commute patterns, phone u
 	\bibitem{TeLESM} H. Holmstr\"{o}m Olsson and J. Bosch, From ad hoc to strategic ecosystem managment: the "Three-Layer Ecosystem Strategy Model" (TeLESM). J of Soft Evolution and Process, 29(7), July 2017
 	\bibitem{SoftwarePatent} http://ieeexplore.ieee.org/document/6236634/?part=1
 	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
+	\bibitem{VolvoVision} Volvo Car Group. (2017). Vision | Volvo Car Group. [Online]. Available: https://group.volvocars.com/company/vision. [Accessed: 22- Nov- 2017].
 	\bibitem{b1}  Mobileye. (2017) Industry Firsts. [Online]. Available: http://www.mobileye.com/about/industry-firsts/
 	\bibitem{b2} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars
 	\bibitem{b3} Volvo Car Corporation. (2017, January). [Online]. Available: https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity
