@@ -32,15 +32,15 @@ To be written.
 \end{abstract}
 
 \section{Introduction}
-Autonomous vehicles (i.e.\ self-driving cars) are right around the corner with Volvo Cars aiming for a 2021 release to market.\cite{ADToMarket} Will it revolutionize the world or not? Who knows, what we do know is that the development had to start somewhere. One piece of the puzzle is to make the car have an automatic brake system to assist the driver to avoid/mitigate hazardous situations. 
+Autonomous vehicles (i.e.\ self-driving cars) are right around the corner with Volvo Cars aiming for a 2021 release to market.\cite{ADToMarket} Will it revolutionize the world or not? Who knows, what we do know is that the development had to start somewhere. One piece of the puzzle is to make the car have an automatic brake system. 
 
-For example, imagine a car driving in the suburbs when suddenly a child accidentally kicks a ball onto the streets. The child makes a run for the ball, not aware of it's surroundings. The driver brakes, but it's due to reaction time of the driver the kid gets heavily injured. Now picture the same scenario with a automatic brake system. The car would be able to stop, by itself, in time and the accident would be avoided considering the car has (close to) no reaction time.
+For example, imagine a car driving in the suburbs when suddenly a child accidentally kicks a ball onto the streets. The child makes a run for the ball, not aware of its surroundings. The driver brakes, but it's due to reaction time of the driver the kid gets heavily injured. Now picture the same scenario with an automatic brake system. The car would be able to stop, by itself, in time and the accident would be avoided considering the car has (close to) no reaction time.
 
-Another possible scenario is that the driver crashes into the rear-end of the car in front due to inattention.
+Another possible scenario is that the driver crashes into the rear-end of the car in front due to inattention from using their phone or changing car settings or due to reduced sight from direct sunlight or harsh weather conditions.
 
-An automatic brake system
+An automatic brake system can, with it being always on, having close to no reaction time and using multiple sensors, potentially avoid, or at least mitigate, the hazardous situations presented above.
 
-With the driver being responsible for approximately 94\% of all car crashes, Volvo Cars with it's three key values, Environment, Quality and Safety, see great value in reducing those types of accidents.\cite{CrashStats,VolvoValues}
+With the driver being responsible for approximately 94\% of all car crashes, Volvo Cars, with it's three key values, Environment, Quality and Safety, see great value in reducing those types of accidents.\cite{CrashStats,VolvoValues}
 
 \subsection{Volvo Cars}
 Volvo Cars has had a strong history of leading the market when it comes to safety innovations with the three-point safety belt in 1959 and side impact protection, whiplash protection and roll-over protection in 1991, 1998 and 2002 respectively. 
@@ -73,7 +73,10 @@ Depending on the software, the collected data could be commute patterns, phone u
 \section{Description of the system}
 The provided source describes the ``Collision Warning with Full Auto Brake and Pedestrian Detection'' system which is a complement to the first generation of ``City Safety''. The second generation (current) ``City Safety'' uses similar hardware, with the exeption that the radar (and camera) is located at the top of the windscreen rather than in the grille, it will therefore be assumed that the systems are similar. \cite{SysDescription,RACam,DelphiVolvo}
 
+The system consist of four main parts. The camera unit, the radar unit, the data fusion unit and a control unit for the automatic brake software. The control unit will communicate with the brake control unit and heads-up display control unit. The camera, radar and data fusion are all part of the unit, called ``RACam'', provided by Delphi. \cite{SysDescription,DelphiVolvo}
 
+\subsection{RACam}
+The data from the camera and radar are sent to the data fusion unit. The radar data is used for finding objects in front of the car and the distances to these objects. The camera image is used for classification of the found objects and therefore verifies whether the objects are vehicles, pedestrians, bycyclists or large animals, the unidentified objects are discarded\footnote{Which objects the ``RACam'' can identify depends which year model the car is.}. The data fusion helps reduce the risk of a false positive i.e. the car would brake without any real risks.\cite{SysDescription}
 \begin{itemize}
 	\item Mobileye http://www.mobileye.com/about/industry-firsts/
 	\item Delphi https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars
@@ -152,14 +155,11 @@ The provided source describes the ``Collision Warning with Full Auto Brake and P
 	\bibitem{ExploitBigData} J Heidrich, A Trendowicz, C Ebert. Exploiting Big Data's Benefit. IEEE Softw 33.4, pp 111-116. 2016
 	\bibitem{SpeedDataEco} J. Bosch. Speed, data, and ecosystems: the future of software engineering. IEEE Software 33.1 pp. 82-88. 2016
 	\bibitem{TeLESM} H. Holmstr\"{o}m Olsson and J. Bosch, From ad hoc to strategic ecosystem managment: the "Three-Layer Ecosystem Strategy Model" (TeLESM). J of Soft Evolution and Process, 29(7), July 2017
-<<<<<<< HEAD
+	\bibitem{SoftwarePatent} http://ieeexplore.ieee.org/document/6236634/?part=1
+	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
 	\bibitem{SysDescription} Coelingh, E., Eidehall, A. and Bengtsson, M. (2010). Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking. 13th International IEEE Conference on Intelligent Transportation Systems.
 	\bibitem{RACam} Delphi. (2017). Delphi Integrated Radar and Camera System. [online] Available at: \seqsplit{https://www.delphi.com/manufacturers/auto/safety/active/racam/} [Accessed 22 Nov. 2017].
 	\bibitem{DelphiVolvo} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: \seqsplit{https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars}
-=======
-	\bibitem{SoftwarePatent} http://ieeexplore.ieee.org/document/6236634/?part=1
-	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
->>>>>>> 3c188c77a6d9163596ba74293d35eec2ae574e58
 	\bibitem{b1}  Mobileye. (2017) Industry Firsts. [Online]. Available: http://www.mobileye.com/about/industry-firsts/
 	\bibitem{b3} Volvo Car Corporation. (2017, January). [Online]. Available: https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity
 	
