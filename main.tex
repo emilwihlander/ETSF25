@@ -31,6 +31,10 @@ dat15jh1@student.lu.se}
 To be written.
 \end{abstract}
 
+% ---------------------------------------------------------
+% ------------------- Introduction  -----------------------
+% ---------------------------------------------------------
+
 \section{Introduction}
 Autonomous vehicles (i.e.\ self-driving cars) are right around the corner with Volvo Cars aiming for a 2021 release to market.\cite{ADToMarket} Will it revolutionize the world or not? Who knows, what we do know is that the development had to start somewhere. One piece of the puzzle is to make the car have an automatic brake system. 
 
@@ -52,7 +56,6 @@ These functions has since their introduction been standard in all models and was
 With the announcement of the rebranding statistics proving the positive effect it has had on safety where provided and presented as a stepping stone towards autonomous vehicles.\cite{CitySafety}
 \subsection{Zenuity}
 In April 2017 a joint venture between Volvo Cars and Autoliv started its operations with the purpose to develop autonomous driving and advanced driver assist systems (ADAS).\cite{ZenuityLaunch} With both Autoliv and Volvo Cars licensing and transferring relevant intellectual property and moving personnel over to Zenuity the development of ADAS functions moved from in-house development to a separate unit. Since automatic brake systems are classified as ADAS these where most likely included in the transfer from Volvo Cars to Zenuity. 
-%*********** Saker relaterade till kursen
 \subsection{OSS}
 Open source software (OSS) is a software open for anyone to read, modify and distribute. However depending on the licence of the OSS, tit might be more or less permissive. \cite{OSS}
 
@@ -70,8 +73,12 @@ Nowadays a company's big struggle is not to store all collected data, it is how 
 
 Depending on the software, the collected data could be commute patterns, phone usage or as simple as the amount of user. With this kind of information the company can make smart decisions. The downside is, the more data one got, the harder it is to process. To take fully advantage of the stored information the processing velocity is key. Another problem is the variety of data a company got. What information is in reality useful? \cite{SpeedDataEco} % TODO: Utveckla mer
 
+% ---------------------------------------------------------
+% --------------Description of the system  ----------------
+% ---------------------------------------------------------
+
 \section{Description of the system}
-The provided source describes the ``Collision Warning with Full Auto Brake and Pedestrian Detection'' system which is a complement to the first generation of ``City Safety''. The second generation (current) ``City Safety'' uses similar hardware, with the exeption that the radar (and camera) is located at the top of the windscreen rather than in the grille, it will therefore be assumed that the systems are similar. \cite{SysDescription,RACam,DelphiVolvo}
+The provided source describes the ``Collision Warning with Full Auto Brake and Pedestrian Detection'' system which is a complement to the first generation of ``City Safety''. The second generation (current) ``City Safety'' uses similar hardware, with the exception that the radar (and camera) is located at the top of the windscreen rather than in the grille, it will therefore be assumed that the systems are similar. \cite{SysDescription,RACam,DelphiVolvo}
 
 The system consist of four main parts. The camera unit, the radar unit, the data fusion unit and a control unit for the automatic brake software. The control unit will communicate with the brake control unit and heads-up display control unit. The camera, radar and data fusion are all part of the unit, called ``RACam'', provided by Delphi. \cite{SysDescription,DelphiVolvo}
 
@@ -84,8 +91,21 @@ The data from the camera and radar are sent to the data fusion unit. The radar d
 	\item Ground truth, inhouse data, move to neural networks -> user data (big data).
 	\item 2017 moved ADAS to new joint venture Zenuity w/ autoliv. https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity
 \end{itemize}
-
+% ---------------------------------------------------------
+% ------------------- Business Aspects  -------------------
+% ---------------------------------------------------------
 \section{Business aspects}
+Volvo Cars is a huge company and hence, there is a lot of business aspects to cover.
+
+The automatic brake system is not OSS which mean the software is disclosed. This seems peculiar considering Volvo Cars history of sharing safety features. What this implies is: Volvo need differentiation. When Volvo back in the days shared the three-point safety belt it was easier to differentiate whereas today it is harder to separate one car brand from another, apart from design and trademark. Nowadays there are some ways to differentiate, e.g. price, reputation, specifications (top velocity, acceleration) or safety. This could be the reason why Volvo is not making the automatic brake system OSS, to have some kind of uniqueness and to strengthen the brand's reputation, i.e. safety first. \cite{VolvoVision}
+
+Why is uniqueness of great importance? Lets take an example. If there were two jumpers in the same color, same price and same size, the only difference is the brand. Which jumper would one chose? In this case the brand's reputation would be the only thing that mattered. Imagine the same example, but, the brand is the same and the price is different. Now the answer is more obvious, one would purchase the cheaper jumper. Now consider this, combine the two examples above. Two jumpers with same color and same size but with different brand and price. Harder decision has to be made, pay a higher price for a brand or pay less for another. Depends on the reputation, if the pricier jumper's company has a reputation of having better quality, the extra charge might be worth it. If we apply these examples to cars instead. Volvo is trying to make the customer consider safety of the car rather then just performance or price. When a customer is considering the safety of the car, it is already a win but this how Volvo can make a profit.
+
+No patent could be find of Volvo's automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. That sort of patent is hard to get approved since it require the software system to be a part of a piece of hardware. It is no easy task to fulfil this requirement The software might be using hardware that is already patented or that there are no isolated hardware Volvo can patent with the software. 
+
+Another speculation of why Volvo has no patent of the automatic brake system could be, once again, differentiation. One can not stress enough the importance of being able to separate from its competitors. A patent will force the inventor to reveal the ``recipe" and everyone can attempt to create the same product only using a different method. Volvo does not want to share their ``secret sauce" and therefore choose not to patent it. 
+
+It feels tragic that a big company such as Volvo, would consider making more money over saving lives by sharing City Safety and/or making it OSS. More lives could be saved and they would further reinforce their safety image. On the flip side, if Volvo revealed City Safety they may struggle keeping their head over water and might eventually go bankrupt. Volvo is a pioneer in safety and if they are gone, the safety progression may halt. Or who knows, it can perhaps progress instead due to the system being shared among all car manufacturers, which is one of the reasons why patent laws were introduced in the first place. That is, to be able to share knowledge and advance research. \textbf{S\"ATT IN K\"ALLA}.
 \subsubsection{Volvo's Business Plan}
 \subsubsection{Business Idea}
 \begin{itemize}
@@ -116,6 +136,11 @@ The data from the camera and radar are sent to the data fusion unit. The radar d
 	\item Lines up with goal to be seen as part of the premium segment.
 	\item Open Source Software
 \end{itemize}
+
+% ---------------------------------------------------------
+% ------------------- Ethical Aspects  --------------------
+% ---------------------------------------------------------
+
 \section{Ethical aspects}
 \begin{itemize}
 	\item Data collection.
@@ -126,7 +151,16 @@ The data from the camera and radar are sent to the data fusion unit. The radar d
 	\end{quotation}
 \end{itemize}
 
+% ---------------------------------------------------------
+% ------------------- Legal Aspects  ----------------------
+% ---------------------------------------------------------
+
 \section{Legal aspects}
+Data collection links to Big Data, which is essential for City Safety \textbf{S\"ATT IN K\"ALLA}. As mentioned, with Big Data smart decisions can be made. But collecting data such as the car's position and the video recording of its surroundings disrupt the privacy \textbf{S\"ATT IN K\"ALLA}. Where ever the chauffeur drives, someone can be watching and take advantage of the geographical position. The owner should be aware of this when purchasing, so in a way, it is hir own choice of potentially being monitored. What if it is never disclaimed at purchase? The clueless person who is acquiring a car does not know that hir position is observed. \textbf{Kolla om det finns något om detta.} 
+
+Other collected data is the recording of its surroundings, which the pedestrian are totally unaware of. They did not get the opportunity of choosing whether they wanted being observed by cars or not. At least the buyer of the car chooses, hopefully aware, of having hir position tracked. According to... \textbf{Kolla om det finns något om collection data.}.
+
+
 \begin{itemize}
 	\item Data collection.
 	\item incorrect brake.
@@ -134,15 +168,15 @@ The data from the camera and radar are sent to the data fusion unit. The radar d
 	\item Open Source Software
 \end{itemize}
 
+% ---------------------------------------------------------
+% ------------------- Summary  --------------------------
+% ---------------------------------------------------------
+
 \section{Summary}
 
-\subsection{Peer-reviewed references}
-\begin{itemize}
-	\item M. Henley, R. Kemp, Open Source Software - An Introduction, Computer Law \& Security Report, 24:77-85, 2008
-	\item J Heidrich, A Trendowicz, C Ebert. Exploiting Big Data's Benefit. IEEE Softw 33.4, pp 111-116. 2016
-	\item J. Bosch. Speed, data, and ecosystems: the future of software engineering. IEEE Software 33.1 pp. 82-88. 2016
-	\item H. Holmstr\"{o}m Olsson and J. Bosch, From ad hoc to strategic ecosystem managment: the "Three-Layer Ecosystem Strategy Model" (TeLESM). J of Soft Evolution and Process, 29(7), July 2017
-\end{itemize}
+% ---------------------------------------------------------
+% ------------------- References  -------------------------
+% ---------------------------------------------------------
 
 \begin{thebibliography}{00}
 	\bibitem{ADToMarket} Volvocars.com. (2017). Autonomous Driving | Intellisafe | Volvo Cars. [online] Available at: https://www.volvocars.com/intl/about/our-innovation-brands/intellisafe/autonomous-driving [Accessed 12 Nov. 2017].
@@ -155,6 +189,12 @@ The data from the camera and radar are sent to the data fusion unit. The radar d
 	\bibitem{ExploitBigData} J Heidrich, A Trendowicz, C Ebert. Exploiting Big Data's Benefit. IEEE Softw 33.4, pp 111-116. 2016
 	\bibitem{SpeedDataEco} J. Bosch. Speed, data, and ecosystems: the future of software engineering. IEEE Software 33.1 pp. 82-88. 2016
 	\bibitem{TeLESM} H. Holmstr\"{o}m Olsson and J. Bosch, From ad hoc to strategic ecosystem managment: the "Three-Layer Ecosystem Strategy Model" (TeLESM). J of Soft Evolution and Process, 29(7), July 2017
+	\bibitem{SysDescription} Coelingh, E., Eidehall, A. and Bengtsson, M. (2010). Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking. 13th International IEEE Conference on Intelligent Transportation Systems.
+	\bibitem{RACam} Delphi. (2017). Delphi Integrated Radar and Camera System. [online] Available at: \seqsplit{https://www.delphi.com/manufacturers/auto/safety/active/racam/} [Accessed 22 Nov. 2017].
+	\bibitem{DelphiVolvo} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: \seqsplit{https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars}
+	\bibitem{SoftwarePatent} A. Wilk, "Patentability of Software", 2012 IEEE International Conference on Software Science, Technology and Engineering, 2012.
+	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
+	\bibitem{VolvoVision} Volvo Car Group. (2017). Vision | Volvo Car Group. [Online]. Available: https://group.volvocars.com/company/vision. 		[Accessed: 22- Nov- 2017].
 	\bibitem{SoftwarePatent} http://ieeexplore.ieee.org/document/6236634/?part=1
 	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
 	\bibitem{SysDescription} Coelingh, E., Eidehall, A. and Bengtsson, M. (2010). Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking. 13th International IEEE Conference on Intelligent Transportation Systems.
