@@ -80,17 +80,24 @@ Depending on the software, the collected data could be commute patterns, phone u
 \section{Description of the system}
 The provided source describes the ``Collision Warning with Full Auto Brake and Pedestrian Detection'' system which is a complement to the first generation of ``City Safety''. The second generation (current) ``City Safety'' uses similar hardware, with the exception that the radar (and camera) is located at the top of the windscreen rather than in the grille, it will therefore be assumed that the systems are similar. \cite{SysDescription,RACam,DelphiVolvo}
 
-The system consist of four main parts. The camera unit, the radar unit, the data fusion unit and a control unit for the automatic brake software. The control unit will communicate with the brake control unit and heads-up display control unit. The camera, radar and data fusion are all part of the unit, called ``RACam'', provided by Delphi. \cite{SysDescription,DelphiVolvo}
+The system consist of four main parts. The camera unit, the radar unit, the data fusion unit and a control unit for the automatic brake software. The control unit will communicate with the brake control unit, display control unit and sound control unit. The camera, radar and data fusion are all part of the unit, called ``RACam'', provided by Delphi. \cite{SysDescription,DelphiVolvo}
 
 \subsection{RACam}
-The data from the camera and radar are sent to the data fusion unit. The radar data is used for finding objects in front of the car and the distances to these objects. The camera image is used for classification of the found objects and therefore verifies whether the objects are vehicles, pedestrians, bycyclists or large animals, the unidentified objects are discarded\footnote{Which objects the ``RACam'' can identify depends which year model the car is.}. The data fusion helps reduce the risk of a false positive i.e. the car would brake without any real risks.\cite{SysDescription}
-\begin{itemize}
-	\item Mobileye http://www.mobileye.com/about/industry-firsts/
-	\item Delphi https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars
-	\item No open source components
-	\item Ground truth, inhouse data, move to neural networks -> user data (big data).
-	\item 2017 moved ADAS to new joint venture Zenuity w/ autoliv. https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity
-\end{itemize}
+The data from the camera and radar are sent to the data fusion unit. The radar data is used for finding objects in front of the car and the distances to these objects. The camera image is used for classification of the found objects and therefore verifies whether they are vehicles, pedestrians, bycyclists or large animals, the unidentified objects are discarded\footnote{Which objects the ``RACam'' can identify depends which year model the car is.}. The data fusion helps reduce the risk of a false positive i.e. the car would brake without any real risks for collision.\cite{SysDescription}
+
+\subsection{Control unit for automatic brake}
+The control unit takes the calculations from the ``RACam'' and analyzes which objects are at risk of being hit based on their size, direction of movement and speed and the host car's speed and angle of the steering wheel. If a object is determined to be at risk a mathematical model is applied. If the model determines that the collision is imminent if the host car doesn't brake the brakes are applied and the car will be able to stop if the relavtive speed is 60 km/h or less\footnote{The limitations are different depending on the type of object in front \cite{CitySafetyDefinition}.} with the latest version. \cite{SysDescription, CitySafetyDefinition}
+
+If the mathematical model detemines that the risk of a collsion is likely it will tell the display and sound control unit to warn the user with a icon and sound. The user will hopefully brake before the automatic braking needs to be activated. \cite{CitySafetyDefinition}
+
+%\begin{itemize}
+%	\item Mobileye http://www.mobileye.com/about/industry-firsts/
+%	\item Delphi https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars
+%	\item No open source components
+%	\item Ground truth, inhouse data, move to neural networks -> user data (big data).
+%	\item 2017 moved ADAS to new joint venture Zenuity w/ autoliv. https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity
+%\end{itemize}
+
 % ---------------------------------------------------------
 % ------------------- Business Aspects  -------------------
 % ---------------------------------------------------------
@@ -201,12 +208,20 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 	\bibitem{SysDescription} Coelingh, E., Eidehall, A. and Bengtsson, M. (2010). Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking. 13th International IEEE Conference on Intelligent Transportation Systems.
 	\bibitem{RACam} Delphi. (2017). Delphi Integrated Radar and Camera System. [online] Available at: \seqsplit{https://www.delphi.com/manufacturers/auto/safety/active/racam/} [Accessed 22 Nov. 2017].
 	\bibitem{DelphiVolvo} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: \seqsplit{https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars}
+	
 	\bibitem{SoftwarePatent} A. Wilk, "Patentability of Software", 2012 IEEE International Conference on Software Science, Technology and Engineering, 2012.
 	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
 	\bibitem{VolvoVision} Volvo Car Group. (2017). Vision | Volvo Car Group. [Online]. Available: https://group.volvocars.com/company/vision. 		[Accessed: 22- Nov- 2017].
 	\bibitem{SoftwarePatent} http://ieeexplore.ieee.org/document/6236634/?part=1
 	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
 	\bibitem{SysDescription} Coelingh, E., Eidehall, A. and Bengtsson, M. (2010). Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking. 13th International IEEE Conference on Intelligent Transportation Systems.
+	
+	\bibitem{CitySafetyDefinition} 
+	``Parameters and subfunctions for City Safety'', 
+	\textit{Volvo Cars Support}. 
+	[Online]. Available: 
+	\seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=v542\&my=2018\&sw=17w46\&article=bd3160158449cb66c0a8015159b3a7b8} [Accessed 12 Dec. 2017].
+	
 	\bibitem{RACam} Delphi. (2017). Delphi Integrated Radar and Camera System. [online] Available at: \seqsplit{https://www.delphi.com/manufacturers/auto/safety/active/racam/} [Accessed 22 Nov. 2017].
 	\bibitem{DelphiVolvo} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: \seqsplit{https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars}
 	\bibitem{SensusConnect} "Sensus Connect", Support.volvocars.com, 2017. [Online]. Available: \seqsplit{https://support.volvocars.com/uk/Pages/article.aspx?article=2f87dc53ab618edec0a801517aec401a}. [Accessed: 06- Dec- 2017].
