@@ -101,11 +101,14 @@ The automatic brake system is not OSS which mean the software is disclosed. This
 
 Why is uniqueness of great importance? Lets take an example. If there were two jumpers in the same color, same price and same size, the only difference is the brand. Which jumper would one chose? In this case the brand's reputation would be the only thing that mattered. Imagine the same example, but, the brand is the same and the price is different. Now the answer is more obvious, one would purchase the cheaper jumper. Now consider this, combine the two examples above. Two jumpers with same color and same size but with different brand and price. Harder decision has to be made, pay a higher price for a brand or pay less for another. Depends on the reputation, if the pricier jumper's company has a reputation of having better quality, the extra charge might be worth it. If we apply these examples to cars instead. Volvo is trying to make the customer consider safety of the car rather then just performance or price. When a customer is considering the safety of the car, it is already a win but this how Volvo can make a profit.
 
-No patent could be find of Volvo's automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. That sort of patent is hard to get approved since it require the software system to be a part of a piece of hardware. It is no easy task to fulfil this requirement The software might be using hardware that is already patented or that there are no isolated hardware Volvo can patent with the software. 
+\textbf{Har inte m\"ojlighet att anv\"anda OSS - Legal, business, software}
+
+No patent could be found of Volvo's automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. The reason it is difficult to get the system approved is that it requires the software system to be a part of a piece of hardware. It is no easy task to fulfil this requirement. The software might be using hardware that is already patented or that there are no isolated hardware Volvo can patent with the software. 
 
 Another speculation of why Volvo has no patent of the automatic brake system could be, once again, differentiation. One can not stress enough the importance of being able to separate from its competitors. A patent will force the inventor to reveal the ``recipe'' and everyone can attempt to create the same product only using a different method. Volvo does not want to share their ``secret sauce'' and therefore choose not to patent it. 
 
-It feels tragic that a big company such as Volvo, would consider making more money over saving lives by sharing City Safety and/or making it OSS. More lives could be saved and they would further reinforce their safety image. On the flip side, if Volvo revealed City Safety the function would be more of a commodity and some customers may choose to go with another car brand. Volvo is a pioneer in safety and if they are gone, the safety progression may halt. Or who knows, it can perhaps progress instead due to the system being shared among all car manufacturers, which is one of the reasons why patent laws were introduced in the first place. That is, to be able to share knowledge and advance research. \textbf{S\"ATT IN K\"ALLA}.
+It feels tragic that a big company such as Volvo, would consider making more money over saving lives by sharing City Safety and/or making it OSS. More lives could be saved and they would further reinforce their safety image. On the flip side, if Volvo revealed City Safety the function would be more of a commodity and some customers may choose to go with another car brand. Volvo is a pioneer in safety and if they are gone, the safety progression may halt. Or who knows, it can perhaps progress instead due to the system being shared among all car manufacturers, which is one of the reasons why patent laws were introduced in the first place. That is, to be able to share knowledge and advance research.\cite{SoftwarePatent}
+\iffalse
 \subsubsection{Volvo's Business Plan}
 \subsubsection{Business Idea}
 \begin{itemize}
@@ -136,6 +139,7 @@ It feels tragic that a big company such as Volvo, would consider making more mon
 	\item Lines up with goal to be seen as part of the premium segment.
 	\item Open Source Software
 \end{itemize}
+\fi
 
 % ---------------------------------------------------------
 % ------------------- Ethical Aspects  --------------------
@@ -156,10 +160,15 @@ It feels tragic that a big company such as Volvo, would consider making more mon
 % ---------------------------------------------------------
 
 \section{Legal aspects}
-Data collection links to Big Data, which is essential for City Safety \textbf{S\"ATT IN K\"ALLA}. As mentioned, with Big Data smart decisions can be made, but collecting data such as the car's position and the video recording of its surroundings disrupt the privacy \textbf{S\"ATT IN K\"ALLA}. Wherever the chauffeur drives, someone can be watching and take advantage of the geographical position. The owner should be aware of this when purchasing, so in a way, it is hir own choice of potentially being monitored. What if it is never disclaimed at purchase? The clueless person who is acquiring a car does not know that hir position is observed. \textbf{Kolla om det finns något om detta.} 
+No source could be found that can verify whether Volvo's automatic brake system is collecting data to a central server or not. Considering that there is no disclaimer, no information it is therefore quite likely that, currently, the system is not collecting data. No internet connection is built in by default which strengthens previous statement \cite{SensusConnect}. However, in the future, there is a great chance that Volvo will store and utilize user data.
 
-Other collected data is the recording of its surroundings, which the pedestrian are totally unaware of. They did not get the opportunity of choosing whether they wanted being observed by cars or not. At least the buyer of the car chooses, hopefully aware, of having hir position tracked. According to... \textbf{Kolla om det finns något om collection data.}.
+Data collection links to Big Data, which might be essential for City Safety in the future. As mentioned, with Big Data smart decisions can be made, but collecting data such as the car's position and the video recording of its surroundings disrupt the privacy\footnote{As can be seen in figure 1 and 7 in \cite{SysDescription}.}.  Where ever the chauffeur drives, someone can be watching and take advantage of the geographical position. The owner should be aware of this when purchasing, so in a way, it is hir own choice of potentially being monitored. What if it is never disclaimed at purchase? The clueless person who is acquiring a car does not know that hir position is observed. \textbf{Couldn't find if it is illegal or not.}.
 
+Other collected data may be the recording of its surroundings, which the pedestrian are totally unaware of. They did not get the opportunity of choosing whether they wanted being observed by cars or not. At least the buyer of the car chooses, hopefully aware, of having hir position tracked. Surprisingly this is not illegal unless recording military vehicle or a prohibited area. \textbf{add source}
+
+If City Safety missed a critical brake, who will be responsible? According to the disclaimer on Volvo's website it is always the drivers responsibility and should never, deliberately, wait for City Safety to activate. ... \cite{CitySafetyLegal}
+
+An incorrect brake, legally speaking, is Volvo's fault and will take full responsibility.
 
 \begin{itemize}
 	\item Data collection.
@@ -200,8 +209,11 @@ Other collected data is the recording of its surroundings, which the pedestrian 
 	\bibitem{SysDescription} Coelingh, E., Eidehall, A. and Bengtsson, M. (2010). Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking. 13th International IEEE Conference on Intelligent Transportation Systems.
 	\bibitem{RACam} Delphi. (2017). Delphi Integrated Radar and Camera System. [online] Available at: \seqsplit{https://www.delphi.com/manufacturers/auto/safety/active/racam/} [Accessed 22 Nov. 2017].
 	\bibitem{DelphiVolvo} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: \seqsplit{https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars}
+	\bibitem{SensusConnect} "Sensus Connect", Support.volvocars.com, 2017. [Online]. Available: \seqsplit{https://support.volvocars.com/uk/Pages/article.aspx?article=2f87dc53ab618edec0a801517aec401a}. [Accessed: 06- Dec- 2017].
+	\bibitem{CitySafetyLegal} "City Safety™", Support.volvocars.com, 2017. [Online]. Available: \seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=y555\&my=2018\&sw=17w17\&article=f11aa8c30d28b105c0a801e8005b64ab}. [Accessed: 12- Dec- 2017]. 
+	\bibitem{PrivacyPolicy} "CUSTOMER PRIVACY POLICY", Support.volvocars.com, 2017. [Online]. \seqsplit{Available: https://support.volvocars.com/uk/pages/article.aspx?article=58bd8ef320c39971c0a801513f4e18ef}. [Accessed: 06- Dec- 2017].
 	\bibitem{b1}  Mobileye. (2017) Industry Firsts. [Online]. Available: http://www.mobileye.com/about/industry-firsts/
-	\bibitem{b3} Volvo Car Corporation. (2017, January). [Online]. Available: https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity
+	\bibitem{b3} Volvo Car Corporation. (2017, January). [Online]. Available: \seqsplit{https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity}
 	
 	% Introduction
 	% 1. Volvo Car Corporation. (2017, November). [Online]. Available: https://www.volvocars.com/intl/about/our-company/heritage
