@@ -10,7 +10,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Volvo's Automatic Brake System}
+\title{Volvo's Automatic Brake System from a business perspective}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Emil Wihlander}
 \IEEEauthorblockA{\textit{Computer science} \\
@@ -55,12 +55,13 @@ These functions has since their introduction been standard in all models and was
 
 With the announcement of the rebranding statistics proving the positive effect it has had on safety where provided and presented as a stepping stone towards autonomous vehicles.\cite{CitySafety}
 \subsection{Zenuity}
-In April 2017 a joint venture between Volvo Cars and Autoliv started its operations with the purpose to develop autonomous driving and advanced driver assist systems (ADAS).\cite{ZenuityLaunch} With both Autoliv and Volvo Cars licensing and transferring relevant intellectual property and moving personnel over to Zenuity the development of ADAS functions moved from in-house development to a separate unit. Since automatic brake systems are classified as ADAS these where most likely included in the transfer from Volvo Cars to Zenuity. 
+In April 2017 a joint venture between Volvo Cars and Autoliv started its operations with the purpose to develop autonomous driving and advanced driver assist systems (ADAS). With both Autoliv and Volvo Cars licensing and transferring relevant intellectual property and moving personnel over to Zenuity the development of ADAS functions moved from in-house development to a separate unit.\cite{ZenuityLaunch} Since automatic brake systems are classified as ADAS these where most likely included in the transfer from Volvo Cars to Zenuity.
+
 \subsection{OSS}
-Open source software (OSS) is a software open for anyone to read, modify and distribute. However depending on the licence of the OSS, tit might be more or less permissive. \cite{OSS}
+Open source software (OSS) is a software open for anyone to read, modify and distribute. However depending on the license of the OSS, tit might be more or less permissive. \cite{OSS}
 
 \subsection{Software Patents}
-Software patents are hard to grasp. From the beginning, patents were meant as a legal protection for inventors. Patents could be viewed as a reward and acknowledgement of a scientist's success, dedication and time spent on an invention. The patent itself gave the inventor monopoly of the invention and therefore protects from potential thieves who steal the idea and use it for their own purpose. \cite{SoftwarePatent} At that time, the kind of inventions would typically be a physical product such as post-office drawer lock.\cite{LockPatent}
+Software patents are hard to grasp. From the beginning, patents were meant as a legal protection for inventors. Patents could be viewed as a reward and acknowledgment of a scientist's success, dedication and time spent on an invention. The patent itself gave the inventor monopoly of the invention and therefore protects from potential thieves who steal the idea and use it for their own purpose. \cite{SoftwarePatent} At that time, the kind of inventions would typically be a physical product such as post-office drawer lock.\cite{LockPatent}
 
 A software program usually imply a computer program. The definition of a computer program is several lines of instruction given to a computer which will execute them sequentially. One may not patent the lines of instructions, however, in conjunction with an executing computer it can be patentable. The reasoning is that a software program needs to be part of a process and in this case an executing computer is considered a process. In Europe, The European Patent Convention (EPC) has taken the ``process'' definition a step further. \cite{SoftwarePatent}
 \begin{quotation}
@@ -83,12 +84,12 @@ The provided source describes the ``Collision Warning with Full Auto Brake and P
 The system consist of four main parts. The camera unit, the radar unit, the data fusion unit and a control unit for the automatic brake software. The control unit will communicate with the brake control unit, display control unit and sound control unit. The camera, radar and data fusion are all part of the unit, called ``RACam'', provided by Delphi. \cite{SysDescription,DelphiVolvo}
 
 \subsection{RACam}
-The data from the camera and radar are sent to the data fusion unit. The radar data is used for finding objects in front of the car and the distances to these objects. The camera image is used for classification of the found objects and therefore verifies whether they are vehicles, pedestrians, bycyclists or large animals, the unidentified objects are discarded\footnote{Which objects the ``RACam'' can identify depends which year model the car is.}. The data fusion helps reduce the risk of a false positive i.e. the car would brake without any real risks for collision.\cite{SysDescription}
+The data from the camera and radar are sent to the data fusion unit. The radar data is used for finding objects in front of the car and the distances to these objects. The camera image is used for classification of the found objects and therefore verifies whether they are vehicles, pedestrians, bicyclists or large animals, the unidentified objects are discarded\footnote{Which objects the ``RACam'' can identify depends which year model the car is.}. The data fusion helps reduce the risk of a false positive i.e. the car would brake without any real risks for collision.\cite{SysDescription}
 
 \subsection{Control unit for automatic brake}
-The control unit takes the calculations from the ``RACam'' and analyzes which objects are at risk of being hit based on their size, direction of movement and speed and the host car's speed and angle of the steering wheel. If a object is determined to be at risk a mathematical model is applied. If the model determines that the collision is imminent if the host car doesn't brake the brakes are applied and the car will be able to stop if the relavtive speed is 60 km/h or less\footnote{The limitations are different depending on the type of object in front \cite{CitySafetyDefinition}.} with the latest version. \cite{SysDescription, CitySafetyDefinition}
+The control unit takes the calculations from the ``RACam'' and analyzes which objects are at risk of being hit based on their size, direction of movement and speed and the host car's speed and angle of the steering wheel. If a object is determined to be at risk a mathematical model is applied. If the model determines that the collision is imminent if the host car does not brake the brakes are applied and the car will be able to stop if the relative speed is 60 km/h or less\footnote{The limitations are different depending on the type of object in front \cite{CitySafetyDefinition}.} with the latest version. \cite{SysDescription, CitySafetyDefinition}
 
-If the mathematical model detemines that the risk of a collsion is likely it will tell the display and sound control unit to warn the user with a icon and sound. The user will hopefully brake before the automatic braking needs to be activated. \cite{CitySafetyDefinition}
+If the mathematical model determines that the risk of a collision is likely it will notify the display and sound control unit to warn the user with an icon and sound. The user will hopefully brake before the automatic braking needs to be activated. \cite{CitySafetyDefinition}
 
 %\begin{itemize}
 %	\item Mobileye http://www.mobileye.com/about/industry-firsts/
@@ -110,7 +111,7 @@ Why is uniqueness of great importance? Lets take an example. If there were two j
 
 \textbf{Har inte m\"ojlighet att anv\"anda OSS - Legal, business, software}
 
-No patent could be found of Volvo's automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. The reason it is difficult to get the system approved is that it requires the software system to be a part of a piece of hardware. It is no easy task to fulfil this requirement. The software might be using hardware that is already patented or that there are no isolated hardware Volvo can patent with the software. 
+No patent could be found of Volvo's automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. The reason it is difficult to get the system approved is that it requires the software system to be a part of a piece of hardware. It is no easy task to fulfill this requirement. The software might be using hardware that is already patented or that there are no isolated hardware Volvo can patent with the software. 
 
 Another speculation of why Volvo has no patent of the automatic brake system could be, once again, differentiation. One can not stress enough the importance of being able to separate from its competitors. A patent will force the inventor to reveal the ``recipe'' and everyone can attempt to create the same product only using a different method. Volvo does not want to share their ``secret sauce'' and therefore choose not to patent it. 
 
@@ -171,11 +172,11 @@ City safety activates and affect the driving. Should a software program be able 
 % ---------------------------------------------------------
 
 \section{Legal aspects}
-No source could be found that can verify whether Volvo's automatic brake system is collecting data to a central server or not. Considering that there is no disclaimer, no information it is therefore quite likely that, currently, the system is not collecting data. No internet connection is built in by default which strengthens previous statement \cite{SensusConnect}. However, in the future, there is a great chance that Volvo will store and utilize user data.
+No source could be found that can verify whether Volvo's automatic brake system is collecting data to a central server or not. Considering that there is no disclaimer, no information it is therefore quite likely that, currently, the system is not collecting data. No Internet connection is built in by default which strengthens previous statement \cite{SensusConnect}. However, in the future, there is a great chance that Volvo will store and utilize user data.
 
-Data collection links to Big Data, which might be essential for City Safety in the future. As mentioned, with Big Data smart decisions can be made, but collecting data such as the car's position and the video recording of its surroundings disrupt the privacy\footnote{As can be seen in figure 1 and 7 in \cite{SysDescription}.}.  Where ever the chauffeur drives, someone can be watching and take advantage of the geographical position. The owner should be aware of this when purchasing, so in a way, it is hir own choice of potentially being monitored. What if it is never disclaimed at purchase? The clueless person who is acquiring a car does not know that hir position is observed. \textbf{Couldn't find if it is illegal or not.}.
+Data collection links to Big Data, which might be essential for City Safety in the future. As mentioned, with Big Data smart decisions can be made, but collecting data such as the car's position and the video recording of its surroundings disrupt the privacy\footnote{As can be seen in figure 1 and 7 in \cite{SysDescription}.}.  Where ever the chauffeur drives, someone can be watching and take advantage of the geographical position. The owner should be aware of this when purchasing, so in a way, it is his/her own choice of potentially being monitored. What if it is never disclaimed at purchase? The clueless person who is acquiring a car does not know that his/her position is observed. \textbf{Couldn't find if it is illegal or not.}.
 
-Other collected data may be the recording of its surroundings, which the pedestrian are totally unaware of. They did not get the opportunity of choosing whether they wanted being observed by cars or not. At least the buyer of the car chooses, hopefully aware, of having hir position tracked. Surprisingly this is not illegal unless recording military vehicle or a prohibited area. \textbf{add source}
+Other collected data may be the recording of its surroundings, which the pedestrian are totally unaware of. They did not get the opportunity of choosing whether they wanted being observed by cars or not. At least the buyer of the car chooses, hopefully aware, of having his/her position tracked. Surprisingly this is not illegal unless recording military vehicle or a prohibited area. \textbf{add source}
 
 If City Safety missed a critical brake, who will be responsible? According to the disclaimer on Volvo's website it is always the drivers responsibility and should never, deliberately, wait for City Safety to activate. \cite{CitySafetyLegal}
 
@@ -192,44 +193,192 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 % ---------------------------------------------------------
 
 \begin{thebibliography}{00}
-	\bibitem{ADToMarket} Volvocars.com. (2017). Autonomous Driving | Intellisafe | Volvo Cars. [online] Available at: https://www.volvocars.com/intl/about/our-innovation-brands/intellisafe/autonomous-driving [Accessed 12 Nov. 2017].
-	\bibitem{CrashStats} NHTSA. (2015). Critical Reasons for Crashes Investigated in the National Motor Vehicle Crash Causation Survey. [online] Available at: \seqsplit{https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812115} [Accessed 12 Nov. 2017].
-	\bibitem{VolvoValues} Volvo Car Group. (2017). Company | Volvo Car Group. [online] Available at: https://group.volvocars.com/company [Accessed 12 Nov. 2017].
-	\bibitem{VolvoInnovation} Volvo Cars. (2017). Safety Innovation in Cars | Volvo Cars. [online] Available at: https://www.volvocars.com/intl/about/our-company/heritage/innovations [Accessed 12 Nov. 2017].
-	\bibitem{CitySafety} Volvo Cars. (2017). Volvo Cars' standard safety technology cuts accident claims by 28 per cent. [online] Available at: \seqsplit{https://www.media.volvocars.com/global/en-gb/media/pressreleases/163733/volvo-cars-standard-safety-technology-cuts-accident-claims-by-28-per-cent} [Accessed 13 Nov. 2017].
-	\bibitem{ZenuityLaunch} Autoliv. (2017). Autoliv and Volvo Cars autonomous driving joint venture Zenuity starts operations. [online] Available at: \seqsplit{http://news.cision.com/autoliv/r/autoliv-and-volvo-cars-autonomous-driving-joint-venture-zenuity-starts-operations,c2240525} [Accessed 14 Nov. 2017].
-	\bibitem{OSS} M. Henley, R. Kemp, Open Source Software - An Introduction, Computer Law \& Security Report, 24:77-85, 2008
-	\bibitem{ExploitBigData} J Heidrich, A Trendowicz, C Ebert. Exploiting Big Data's Benefit. IEEE Softw 33.4, pp 111-116. 2016
-	\bibitem{SpeedDataEco} J. Bosch. Speed, data, and ecosystems: the future of software engineering. IEEE Software 33.1 pp. 82-88. 2016
-	\bibitem{TeLESM} H. Holmstr\"{o}m Olsson and J. Bosch, From ad hoc to strategic ecosystem managment: the "Three-Layer Ecosystem Strategy Model" (TeLESM). J of Soft Evolution and Process, 29(7), July 2017
-	\bibitem{SysDescription} Coelingh, E., Eidehall, A. and Bengtsson, M. (2010). Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking. 13th International IEEE Conference on Intelligent Transportation Systems.
-	\bibitem{RACam} Delphi. (2017). Delphi Integrated Radar and Camera System. [online] Available at: \seqsplit{https://www.delphi.com/manufacturers/auto/safety/active/racam/} [Accessed 22 Nov. 2017].
-	\bibitem{DelphiVolvo} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: \seqsplit{https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars}
+	\bibitem{ADToMarket} 
+	Volvo Car Corporation,
+	`Autonomous Driving'',
+	2017.
+	[online]. Available: \seqsplit{https://www.volvocars.com/intl/about/our-innovation-brands/intellisafe/autonomous-driving}.
+	[Accessed 12 Nov. 2017].
 	
-	\bibitem{SoftwarePatent} A. Wilk, "Patentability of Software", 2012 IEEE International Conference on Software Science, Technology and Engineering, 2012.
-	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
-	\bibitem{VolvoVision} Volvo Car Group. (2017). Vision | Volvo Car Group. [Online]. Available: https://group.volvocars.com/company/vision. 		[Accessed: 22- Nov- 2017].
-	\bibitem{SoftwarePatent} "Patentability of Software - IEEE Conference Publication", Ieeexplore.ieee.org, 2017. [Online]. Available: http://ieeexplore.ieee.org/document/6236634/?part=1. [Accessed: 15- Dec- 2017].
-	\bibitem{LockPatent} Yale, L. (1861). Linus Yale. 31,278.
-	\bibitem{SysDescription} Coelingh, E., Eidehall, A. and Bengtsson, M. (2010). Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking. 13th International IEEE Conference on Intelligent Transportation Systems.
-	\bibitem{CitySafetyDefinition} 
-	``Parameters and subfunctions for City Safety'', 
-	\textit{Volvo Cars Support}. 
+	\bibitem{CrashStats} 
+	NHTSA,
+	``Critical Reasons for Crashes Investigated in the National Motor Vehicle Crash Causation Survey'',
+	2015.
+	[online]. Available: \seqsplit{https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812115}.
+	[Accessed 12 Nov. 2017].
+	
+	\bibitem{VolvoValues} 
+	Volvo Car Corporation,
+	``Company'',
+	2017.
+	[online]. Available: 
+	\seqsplit{https://group.volvocars.com/company}.
+	[Accessed 12 Nov. 2017].
+	
+	\bibitem{VolvoInnovation} 
+	Volvo Car Corporation,
+	``A heritage of innovation'',
+	2017.
+	[online]. Available: \seqsplit{https://www.volvocars.com/intl/about/our-company/heritage/innovations}.
+	[Accessed 12 Nov. 2017].
+	
+	\bibitem{CitySafety} 
+	Volvo Car Group,
+	``Volvo Cars' standard safety technology cuts accident claims by 28 per cent'',
+	2015.
+	[online]. Available: \seqsplit{https://www.media.volvocars.com/global/en-gb/media/pressreleases/163733/volvo-cars-standard-safety-technology-cuts-accident-claims-by-28-per-cent}.
+	[Accessed 13 Nov. 2017].
+	
+	\bibitem{ZenuityLaunch} 
+	Autoliv,
+	``Autoliv and Volvo Cars autonomous driving joint venture Zenuity starts operations'',
+	2017.
+	[online]. Available: \seqsplit{http://news.cision.com/autoliv/r/autoliv-and-volvo-cars-autonomous-driving-joint-venture-zenuity-starts-operations,c2240525}.
+	[Accessed 14 Nov. 2017].
+	
+	\bibitem{OSS} 
+	M. Henley and R. Kemp,
+	``Open Source Software: An Introduction'', 
+	Computer Law \& Security Report,
+	vol. 24, pp. 77-85, 
+	2008.
+	
+	\bibitem{SoftwarePatent} 
+	A. Wilk,
+	``Patentability of Software'',
+	in 2012 IEEE International Conference on Software Science, Technology and Engineering,
+	Herzlia, Israel,
+	pp. 30-39,
+	2012.
+	
+	\bibitem{LockPatent} 
+	L. Yale,
+	``Linus Yale'',
+	31,278,
+	1861.
+	
+	\bibitem{ExploitBigData} 
+	J. Heidrich, A. Trendowicz and C. Ebert,
+	``Exploiting Big Data's Benefit'',
+	IEEE Software 
+	vol. 33, no. 4, pp. 111-116,
+	2016.
+	
+	\bibitem{SpeedDataEco} 
+	J. Bosch,
+	``Speed, data, and ecosystems: the future of software engineering'',
+	IEEE Software,
+	vol. 33, no. 1, pp. 82-88, 
+	2016.
+	
+%	\bibitem{TeLESM} 
+%	H. Holmstr\"{o}m Olsson and J. Bosch,
+%	``From ad hoc to strategic ecosystem management: the `Three-Layer Ecosystem Strategy Model' (TeLESM)'',
+%	Journal of Software: Evolution and Process,
+%	vol. 29, no. 7, 
+%	2017.
+	
+	\bibitem{SysDescription} 
+	E. Coelingh, A. Eidehall and M. Bengtsson,
+	``Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking'',
+	in 13th International IEEE Conference on Intelligent Transportation Systems, 
+	Funchal, Portugal,
+	pp. 155 - 160,
+	2010.
+	
+	\bibitem{RACam} 
+	Delphi,
+	``Delphi Integrated Radar and Camera System'',
+	2017.
+	[online]. Available: \seqsplit{https://www.delphi.com/manufacturers/auto/safety/active/racam/}.
+	[Accessed 22 Nov. 2017].
+	
+	\bibitem{DelphiVolvo} 
+	Delphi,
+	``Delphi First to Market with Integrated Radar and Camera System on Volvo Cars'',
+	2014.
+	[Online]. Available: \seqsplit{http://news.cision.com/market-engineering/r/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars,c9654815}.
+	[Accessed 19 Dec. 2017].
+	
+	\bibitem{CitySafetyDefinition}
+	Volvo Cars Support,
+	``Parameters and subfunctions for City Safety'',
+	2017.
 	[Online]. Available: 
-	\seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=v542\&my=2018\&sw=17w46\&article=bd3160158449cb66c0a8015159b3a7b8} [Accessed 12 Dec. 2017].
-	\bibitem{RACam} Delphi. (2017). Delphi Integrated Radar and Camera System. [online] Available at: \seqsplit{https://www.delphi.com/manufacturers/auto/safety/active/racam/} [Accessed 22 Nov. 2017].
-	\bibitem{DelphiVolvo} Delphi. (2014, October) Delphi First to Market with Integrated Radar and Camera System on Volvo Cars. [Online]. Available: \seqsplit{https://www.delphi.com/media-old/pressreleases-old/2014/10/02/delphi-first-to-market-with-integrated-radar-and-camera-system-on-volvo-cars}
-	\bibitem{SensusConnect} "Sensus Connect", Support.volvocars.com, 2017. [Online]. Available: \seqsplit{https://support.volvocars.com/uk/Pages/article.aspx?article=2f87dc53ab618edec0a801517aec401a}. [Accessed: 06- Dec- 2017].
-	\bibitem{CitySafetyLegal} "City Safety™", Support.volvocars.com, 2017. [Online]. Available: \seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=y555\&my=2018\&sw=17w17\&article=f11aa8c30d28b105c0a801e8005b64ab}. [Accessed: 12- Dec- 2017]. 
-	\bibitem{PrivacyPolicy} "CUSTOMER PRIVACY POLICY", Support.volvocars.com, 2017. [Online]. Available: \seqsplit{https://support.volvocars.com/uk/pages/article.aspx?article=58bd8ef320c39971c0a801513f4e18ef}. [Accessed: 06- Dec- 2017].
-	\bibitem{GoogleAds} "Google Privacy | Why data protection matters", Privacy.google.com, 2017. [Online]. Available: https://privacy.google.com/how-ads-work.html. [Accessed: 15- Dec- 2017].
-	\bibitem{GoogleNearby} "Search and find nearby places - Android - Google Maps Help", Support.google.com, 2017. [Online]. Available: \seqsplit{https://support.google.com/maps/answer/4610185?co=GENIE.Platform\%3DAndroid\&hl=en.} [Accessed: 15- Dec- 2017].
-	\bibitem{GoogleUserData} "Google Privacy | Why data protection matters", Privacy.google.com, 2017. [Online]. Available: https://privacy.google.com/your-data.html. [Accessed: 15- Dec- 2017].
-	\bibitem{TheFappening} C. Arthur, "Naked celebrity hack: security experts focus on iCloud backup theory", the Guardian, 2017. [Online]. Available: \seqsplit{https://www.theguardian.com/technology/2014/sep/01/naked-celebrity-hack-icloud-backup-jennifer-lawrence.} [Accessed: 15- Dec- 2017].
-	\bibitem{EdwardSnowden} G. Greenwald, E. MacAskill and L. Poitras, "Edward Snowden: the whistleblower behind the NSA surveillance revelations", the Guardian, 2017. [Online]. Available: \seqsplit{https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance.} [Accessed: 15- Dec- 2017].
-	\bibitem{VolvoUserData} "CUSTOMER PRIVACY POLICY", Support.volvocars.com, 2017. [Online]. Available: \seqsplit{https://support.volvocars.com/uk/pages/article.aspx?article=58bd8ef320c39971c0a801513f4e18ef.} [Accessed: 15- Dec- 2017].
-	\bibitem{b1}  Mobileye. (2017) Industry Firsts. [Online]. Available: http://www.mobileye.com/about/industry-firsts/
-	\bibitem{b3} Volvo Car Corporation. (2017, January). [Online]. Available: \seqsplit{https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity}
+	\seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=v542\&my=2018\&sw=17w46\&article=bd3160158449cb66c0a8015159b3a7b8}.
+	[Accessed 12 Dec. 2017].
+	
+	\bibitem{VolvoVision} 
+	Volvo Car Group,
+	``Vision'',
+	2017.
+	[Online]. Available: 
+	\seqsplit{https://group.volvocars.com/company/vision}. 
+	[Accessed: 22- Nov- 2017].
+	
+%	\bibitem{PrivacyPolicy}
+%	Volvo Cars Support,
+%	``CUSTOMER PRIVACY POLICY'',
+%	2017.
+%	[Online]. Available:
+%	\seqsplit{https://support.volvocars.com/uk/pages/article.aspx?article=58bd8ef320c39971c0a801513f4e18ef}.
+%	[Accessed 06 Dec. 2017].
+	
+	\bibitem{GoogleAds}
+	Google, 
+	``Google Privacy | Why data protection matters'',
+	2017.
+	[Online]. Available:
+	\seqsplit{https://privacy.google.com/how-ads-work.html}.
+	[Accessed 15 Dec. 2017].
+	
+	\bibitem{GoogleNearby}
+	Google,
+	``Search and find nearby places'',
+	2017.
+	[Online]. Available: \seqsplit{https://support.google.com/maps/answer/4610185?co=GENIE.Platform\%3DAndroid\&hl=en}.
+	[Accessed 15 Dec. 2017].
+	
+	\bibitem{GoogleUserData} 
+	Google,
+	``Google Privacy | Why data protection matters'',
+	2017.
+	[Online]. Available:
+	\seqsplit{https://privacy.google.com/your-data.html}.
+	[Accessed 15 Dec. 2017].
+	
+	\bibitem{TheFappening}
+	C. Arthur,
+	``Naked celebrity hack: security experts focus on iCloud backup theory'',
+	\emph{the Guardian},
+	2017.
+	[Online]. Available: \seqsplit{https://www.theguardian.com/technology/2014/sep/01/naked-celebrity-hack-icloud-backup-jennifer-lawrence.}.
+	[Accessed 15 Dec. 2017].
+	
+	\bibitem{EdwardSnowden}
+	G. Greenwald, E. MacAskill and L. Poitras,
+	``Edward Snowden: the whistleblower behind the NSA surveillance revelations'',
+	\emph{the Guardian},
+	2017.
+	[Online]. Available: \seqsplit{https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance.}.
+	[Accessed 15 Dec. 2017].
+	
+	\bibitem{SensusConnect}
+	Volvo Cars Support,
+	``Sensus Connect'',
+	2017.
+	[Online]. Available: \seqsplit{https://support.volvocars.com/uk/Pages/article.aspx?article=2f87dc53ab618edec0a801517aec401a}.
+	[Accessed 06 Dec. 2017].
+	
+	\bibitem{CitySafetyLegal}
+	Volvo Cars Support,
+	``City Safety'',
+	2017.
+	[Online]. Available: \seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=y555\&my=2018\&sw=17w17\&article=f11aa8c30d28b105c0a801e8005b64ab}.
+	[Accessed 12 Dec. 2017].
+	
+%	\bibitem{b1}  Mobileye. (2017) Industry Firsts. [Online]. Available: http://www.mobileye.com/about/industry-firsts/
+%	\bibitem{b3} Volvo Car Corporation. (2017, January). [Online]. Available: \seqsplit{https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity}
 	
 	% Introduction
 	% 1. Volvo Car Corporation. (2017, November). [Online]. Available: https://www.volvocars.com/intl/about/our-company/heritage
