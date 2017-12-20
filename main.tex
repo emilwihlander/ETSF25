@@ -54,8 +54,9 @@ Volvo Cars has been offering an automatic brake system for rear-end collisions i
 These functions has since their introduction been standard in all models and was in 2015, soon after the release of the second generation of ``City Safety'', rebranded so that all their different versions of automatic braking where included in their trademark ``City Safety''.\cite{CitySafety}
 
 With the announcement of the rebranding statistics proving the positive effect it has had on safety where provided and presented as a stepping stone towards autonomous vehicles.\cite{CitySafety}
+
 \subsection{Zenuity}
-In April 2017 a joint venture between Volvo Cars and Autoliv started its operations with the purpose to develop autonomous driving and advanced driver assist systems (ADAS). With both Autoliv and Volvo Cars licensing and transferring relevant intellectual property and moving personnel over to Zenuity the development of ADAS functions moved from in-house development to a separate unit.\cite{ZenuityLaunch} Since automatic brake systems are classified as ADAS these where most likely included in the transfer from Volvo Cars to Zenuity.
+In April 2017 a joint venture between Volvo Cars and Autoliv started its operations with the purpose to develop autonomous driving and advanced driver assist systems (ADAS). With both Autoliv and Volvo Cars licensing and transferring relevant intellectual property and moving personnel over to Zenuity the development of ADAS functions moved from in-house development to a separate unit. Zenuity's software will be sold to both third parties through Autoliv as well as Volvo Cars directly. \cite{ZenuityLaunch} Since automatic brake systems are classified as ADAS these where most likely included in the transfer from Volvo Cars to Zenuity.
 
 \subsection{OSS}
 Open source software (OSS) is a software open for anyone to read, modify and distribute. However depending on the license of the OSS, tit might be more or less permissive. \cite{OSS}
@@ -103,19 +104,43 @@ If the mathematical model determines that the risk of a collision is likely it w
 % ------------------- Business Aspects  -------------------
 % ---------------------------------------------------------
 \section{Business aspects}
-Volvo Cars is a huge company and hence, there is a lot of business aspects to cover.
+City Safety does not generate any revenue as it is not sold as an upgrade, but is standard in all models. This begs the question, which are the financial driving forces behind City Safety? This will be analyzed from the perspective of the ``Three-layer product model'' presented in \cite{TeLESM}.
 
-The automatic brake system is not OSS which mean the software is disclosed. This seems peculiar considering Volvo Cars history of sharing safety features. What this implies is: Volvo need differentiation. When Volvo back in the days shared the three-point safety belt it was easier to differentiate whereas today it is harder to separate one car brand from another, apart from design and trademark. Nowadays there are some ways to differentiate, e.g. price, reputation, specifications (top velocity, acceleration) or safety. This could be the reason why Volvo is not making the automatic brake system OSS, to have some kind of uniqueness and to strengthen the brand's reputation, i.e. safety first. \cite{VolvoVision}
+\subsection{Three-Layer product model}
+One of the clear motivators during the initial development back in 2008 is, as presented before, its goal to be seen as the safest car brand. Volvo Cars' choice to release it as standard on all its models also seem to have the same motive. This positioned City Safety in the differentiating functionally layer but as the market has matured two thirds of all car models sold in the US have at least the option of adding city-speed emergency braking. Also, one of Volvo Cars' main competitors, Mercedes-Benz, have chosen to make automatic braking standard in most of its models.  \cite{AEBStatistics} This means that Volvo Car should start the process of moving the basic parts of City Safety from the differentiating functionality layer to the commoditized functionality layer. Thereby moving from optimizing for customer value to optimizing for the cost.
 
-Why is uniqueness of great importance? Lets take an example. If there were two jumpers in the same color, same price and same size, the only difference is the brand. Which jumper would one chose? In this case the brand's reputation would be the only thing that mattered. Imagine the same example, but, the brand is the same and the price is different. Now the answer is more obvious, one would purchase the cheaper jumper. Now consider this, combine the two examples above. Two jumpers with same color and same size but with different brand and price. Harder decision has to be made, pay a higher price for a brand or pay less for another. Depends on the reputation, if the pricier jumper's company has a reputation of having better quality, the extra charge might be worth it. If we apply these examples to cars instead. Volvo is trying to make the customer consider safety of the car rather then just performance or price. When a customer is considering the safety of the car, it is already a win but this how Volvo can make a profit.
+The automatic brake system is not OSS which mean the software is disclosed. This seems peculiar considering Volvo Cars history of sharing safety features and moving them from differentiating to commoditized early on. This could imply two things, either Volvo Cars needs differentiation or they do not have the infrastructure (internal policies, standardization, servers for hosting, etc.) to do it.
 
-\textbf{Har inte m\"ojlighet att anv\"anda OSS - Legal, business, software}
+\subsubsection{Differentiation}
+When Volvo Cars back in the days shared the three-point safety belt it was easier to differentiate whereas today it is harder to separate one car brand from another, apart from design and trademark. Nowadays there are some ways to differentiate, e.g. price, reputation, specifications (top velocity, acceleration) or safety. This could be the reason why Volvo Cars is not making the automatic brake system OSS, to have some kind of uniqueness and to strengthen the brand's reputation, i.e. safety first, and even though the function is moving from differentiating to commoditized it can still be seen as the former since it is a highly requested feature among consumers. \cite{AEBStatistics,VolvoVision}
 
-No patent could be found of Volvo's automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. The reason it is difficult to get the system approved is that it requires the software system to be a part of a piece of hardware. It is no easy task to fulfill this requirement. The software might be using hardware that is already patented or that there are no isolated hardware Volvo can patent with the software. 
+Why is uniqueness of great importance? Lets take an example. If there were two jumpers in the same color, same price and same size, the only difference is the brand. Which jumper would one chose? In this case the brand's reputation would be the only thing that mattered. Imagine the same example, but, the brand is the same and the price is different. Now the answer is more obvious, one would purchase the cheaper jumper. Now consider this, combine the two examples above. Two jumpers with same color and same size but with different brand and price. Harder decision has to be made, pay a higher price for a brand or pay less for another. Depends on the reputation, if the pricier jumper's company has a reputation of having better quality, the extra charge might be worth it. If we apply these examples to cars instead. Volvo Cars is trying to make the customer consider safety of the car rather then just performance or price. When a customer is considering the safety of the car, it is already a win but this how Volvo Cars can make a profit.
 
-Another speculation of why Volvo has no patent of the automatic brake system could be, once again, differentiation. One can not stress enough the importance of being able to separate from its competitors. A patent will force the inventor to reveal the ``recipe'' and everyone can attempt to create the same product only using a different method. Volvo does not want to share their ``secret sauce'' and therefore choose not to patent it. 
+\subsubsection{Lacking infrastructure}
+Making functions OSS is a great way to move a function to the commoditized functionality layer to reduce ownership cost but a  reasonable explanation why this has not happened is that Volvo Cars is not mature enough as a software company to release open source software. It is only recently automakers have moved to large scale software development as they are traditionally hardware makers. Software giants such as Microsoft, who have been in the software industry for over 30 years, have not had any major presence in the OSS community until recently which gives some sort of indication of the difficulties with moving to OSS.
 
-It feels tragic that a big company such as Volvo, would consider making more money over saving lives by sharing City Safety and/or making it OSS. More lives could be saved and they would further reinforce their safety image. On the flip side, if Volvo revealed City Safety the function would be more of a commodity and some customers may choose to go with another car brand. Volvo is a pioneer in safety and if they are gone, the safety progression may halt. Or who knows, it can perhaps progress instead due to the system being shared among all car manufacturers, which is one of the reasons why patent laws were introduced in the first place. That is, to be able to share knowledge and advance research.\cite{SoftwarePatent}
+In 2017 Volvo Cars announced a partnership with Google to use Android as the base operating system for the infotainment system\footnote{The infotainment system is the software running on the center stack display giving the user the ability to play music, change settings, get direction, etc.} in upcoming models.\cite{VolvoAndroid} This gives Volvo Cars, with minimal effort, the ability to build a light shell on top of a robust open source operating system instead of having the need to do this in house. As infotainment systems are more or less commodity this makes a resource intensive task, which does not add much customer value, a lot easier.
+
+There are a lot of questions around how to handle liability, different sensors, modularity, etc. when it comes to open sourcing safety features since it can have severe consequences. But it is easy to draw parallels between the move to android and the possibility that Volvo Cars will move toward more OSS in the future as features become commodity and Volvo Cars, and the rest of the industry, mature as software companies.
+
+\subsection{Patents}
+No patent could be found of Volvo Cars' automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. The reason it is difficult to get the system approved is that it requires the software system to be a part of a piece of hardware. It is no easy task to fulfill this requirement. The software might be using hardware that is already patented or that there are no isolated hardware Volvo Cars can patent with the software. 
+
+Another speculation of why Volvo Cars has no patent of the automatic brake system could be, once again, differentiation. One can not stress enough the importance of being able to separate from its competitors. A patent will force the inventor to reveal the ``recipe'' and everyone can attempt to create the same product only using a different method. Volvo Cars does not want to share their ``secret sauce'' and therefore choose not to patent it. \cite{SoftwarePatent}
+
+\subsection{Zenuity}
+Zenuity positions itself somewhere between in house development and open source development since it shares resources between companies and wishes to distribute development and maintenance cost over multiple buyers. If Zenuity manages to obtain a large customer base the number of stakeholders will increase drastically and will simulate a OSS community.
+
+The difference between Zenuity and OSS is that the hardware the software runs on is still regulated. This could avoid some of the problems with open sourcing safety features mentioned earlier.
+
+With Zenuity acting as an intermediate step between in house and open source development and being a pure software company it could be positioned very well to thrive in the current transformation the industry is experiencing.
+
+\subsection{Summary}
+At the moment City Safety gives Volvo Cars its business value by boosting Volvo Cars' brand strength in safety but by releasing City Safety as open source Volvo Cars could gain greatly, reduced maintenance cost and reinforcement to its safety image. But it is also a risk because automatic braking may not be ready to go from being differentiating to commodity or the industry might not be ready and a backlash could present itself if something would go wrong.
+
+The creation of Zenuity seems to be a counter move to the digitalization and problems around shared innovation and patents. It could help Volvo Cars make an informed decision in problems as the one described in the last paragraph and to be able to share knowledge and advance research.
+
+% It feels tragic that a big company such as Volvo, would consider making more money over saving lives by sharing City Safety and/or making it OSS. More lives could be saved and they would further reinforce their safety image. On the flip side, if Volvo revealed City Safety the function would be more of a commodity and some customers may choose to go with another car brand. Volvo is a pioneer in safety and if they are gone, the safety progression may halt. Or who knows, it can perhaps progress instead due to the system being shared among all car manufacturers, which is one of the reasons why patent laws were introduced in the first place. That is, to be able to share knowledge and advance research.
 \iffalse
 \subsubsection{Volvo's Business Plan}
 \subsubsection{Business Idea}
@@ -271,13 +296,6 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 	vol. 33, no. 1, pp. 82-88, 
 	2016.
 	
-%	\bibitem{TeLESM} 
-%	H. Holmstr\"{o}m Olsson and J. Bosch,
-%	``From ad hoc to strategic ecosystem management: the `Three-Layer Ecosystem Strategy Model' (TeLESM)'',
-%	Journal of Software: Evolution and Process,
-%	vol. 29, no. 7, 
-%	2017.
-	
 	\bibitem{SysDescription} 
 	E. Coelingh, A. Eidehall and M. Bengtsson,
 	``Collision Warning with Full Auto Brake and Pedestrian Detection - a practical example of Automatic Emergency Braking'',
@@ -308,13 +326,37 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 	\seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=v542\&my=2018\&sw=17w46\&article=bd3160158449cb66c0a8015159b3a7b8}.
 	[Accessed 12 Dec. 2017].
 	
+	\bibitem{TeLESM} 
+	H. Holmstr\"{o}m Olsson and J. Bosch,
+	``From ad hoc to strategic ecosystem management: the `Three-Layer Ecosystem Strategy Model' (TeLESM)'',
+	Journal of Software: Evolution and Process,
+	vol. 29, no. 7, 
+	2017.
+	
+	\bibitem{AEBStatistics}
+	S. Sinclair,
+	``Automatic Emergency Braking Availability Expands with 2017 Cars'',
+	\emph{Consumer reports},
+	2017.
+	[Online]. Available:
+	\seqsplit{https://www.consumerreports.org/car-safety/automatic-emergency-braking-availability-expands-with-2017-cars/}.
+	[Accessed 19 Dec. 2017].
+	
 	\bibitem{VolvoVision} 
 	Volvo Car Group,
 	``Vision'',
 	2017.
 	[Online]. Available: 
 	\seqsplit{https://group.volvocars.com/company/vision}. 
-	[Accessed: 22- Nov- 2017].
+	[Accessed 22 Nov. 2017].
+	
+	\bibitem{VolvoAndroid}
+	Volvo Car Group,
+	``Volvo Cars partners with Google to build Android into next generation connected cars'',
+	2017.
+	[Online]. Available:
+	\seqsplit{https://www.media.volvocars.com/global/en-gb/media/pressreleases/208072/volvo-cars-partners-with-google-to-build-android-into-next-generation-connected-cars}.
+	[Accessed 20 Dec. 2017].
 	
 %	\bibitem{PrivacyPolicy}
 %	Volvo Cars Support,
