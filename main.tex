@@ -47,7 +47,7 @@ An automatic brake system can, with it being always on, having close to no react
 With the driver being responsible for approximately 94\% of all car crashes, Volvo Cars, with it's three key values, Environment, Quality and Safety, see great value in reducing those types of accidents.\cite{CrashStats,VolvoValues}
 
 \subsection{Volvo Cars}
-Volvo Cars has had a strong history of leading the market when it comes to safety innovations with the three-point safety belt in 1959 and side impact protection, whiplash protection and roll-over protection in 1991, 1998 and 2002 respectively. 
+Volvo Cars has had a strong history of leading the industry when it comes to safety innovations with the three-point safety belt in 1959 and side impact protection, whiplash protection and roll-over protection in 1991, 1998 and 2002 respectively. 
 While most of the innovation in the safety field up to the early -00 where protective features newer innovations focus on proactive safety such as the blind spot information system which was introduced in 2003.\cite{VolvoInnovation}
 
 Volvo Cars has been offering an automatic brake system for rear-end collisions in it's cars since 2008 and added a similar system for pedestrians in 2010. \cite{VolvoInnovation}
@@ -147,18 +147,25 @@ The creation of Zenuity seems to be a counter move to the digitalization and pro
 % ---------------------------------------------------------
 
 \section{Ethical aspects}
+One of the major ethical concerns is the process of moving control from the driver to an algorithm due to the questions regarding liability. If City Safety would fail to brake in a situation where the driver expects it to work it could be argued that City Safety ultimately is the reason for the accident. This happened during an unofficial demonstration of the feature. \cite{CitySafetyFail} Volvo Cars tries to avoid these incidents by having a clear communication as to how City Safety should be used. Their support site states:
+
+\begin{quotation}
+	``City Safety must not be used as an excuse for the driver to change his/her driving style. If the driver solely relies on City Safety to do the braking, there might be a risk of a collision sooner or later.'' \cite{CitySafetyLegal}
+\end{quotation}
+
+Volvo has also designed City Safety in such a way that i should not engage until it is absolutely necessary and then brake hard. This will, by the driver, most likely be perceived as too late and as an unpleasant deceleration. This will most likely urge the driver not to use City Safety for convenience.
+
+On the other end a possible error would be if City Safety would engage without an actual impending collision. With a car behind this could result in a collision rather than avoiding one. It is stated that the risk of this happening is at an ``acceptably low level'' \cite{SysDescription} but that still leaves room for accidents.
+
+These two scenarios together could put City Safety, and there by Volvo Cars, in ethically muddy waters. However, if you take into consideration the positive effect it has had on the number of rear-end collisions \cite{CitySafety} the positives vastly outweighs the negatives.
+
+\subsection{Future}
+The current implementation uses a mathematical model for decision-making but the possibility that future versions would be designed with machine learning, or more specifically deep learning, is probable. \cite{SysDescription} Automakers have lately seen the benefits deep learning could provide in the development of ADAS and autonomous driving technologies. This has manifested itself through the launch of NVIDIA Drive PX and the multiple partners involved (e.g. Volvo, Tesla and Mercedes-Benz). \cite{DrivePX} Machine learning requires big and versatile data sets which would give Volvo Cars an incentive to start collecting user data to improve the functionality.
+
 Data collection is nothing illegal as long as the user agrees to the terms. However, ethical speaking, one can argue if it should be allowed. A company may collect data, both sensitive and non-sensitive, from a user in order to process and do various operations. How the data is processed and used depends on the company, it can be showing relevant ads or used to get nearest hospital \cite{GoogleAds,GoogleNearby,GoogleUserData}. Some data may be harmless, such as a record of a purchase made a year ago. Certain data is essential, for instance one's bank account with transaction history and account balance. There is always two sides of the same coin and hence there is data that is sensitive and can be used against an individual. When using Google's army of products, one give up a hefty amount of information \cite{GoogleUserData}. Suppose the information gets in the wrong hands, it can revealed which removes the purpose of privacy. It has happened and it can happen again \cite{TheFappening,EdwardSnowden}. 
 Volvo
 
-City safety activates and affect the driving. Should a software program be able to be in somewhat control in traffic? One might say that it is not ethical that a program can be the deciding in a life and death situation. After all, the driver should always be alert and in control. If it is possible for the software to make even one mistake, e.g. an incorrect brake, 
-\begin{itemize}
-	\item Data collection.
-	\item incorrect brake.
-	\item missed brake.
-	\begin{quotation}
-		City Safety should not be used to alter the way in which the driver operates the vehicle. The driver should never rely solely on this system to safely stop the vehicle.
-	\end{quotation}
-\end{itemize}
+% City safety activates and affect the driving. Should a software program be able to be in somewhat control in traffic? One might say that it is not ethical that a program can be the deciding in a life and death situation. After all, the driver should always be alert and in control. If it is possible for the software to make even one mistake, e.g. an incorrect brake, 
 
 % ---------------------------------------------------------
 % ------------------- Legal Aspects  ----------------------
@@ -326,6 +333,29 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 	\seqsplit{https://www.media.volvocars.com/global/en-gb/media/pressreleases/208072/volvo-cars-partners-with-google-to-build-android-into-next-generation-connected-cars}.
 	[Accessed 20 Dec. 2017].
 	
+	\bibitem{CitySafetyFail}
+	V. Cruz Cid,
+	``Volvo auto brake system fail'',
+	2015.
+	[Online]. Available:
+	\seqsplit{https://www.youtube.com/watch?v=\_47utWAoupo}.
+	[Accessed 21 Dec. 2017].
+	
+	\bibitem{CitySafetyLegal}
+	Volvo Cars Support,
+	``City Safety'',
+	2017.
+	[Online]. Available: \seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=y555\&my=2018\&sw=17w17\&article=f11aa8c30d28b105c0a801e8005b64ab}.
+	[Accessed 12 Dec. 2017].
+	
+	\bibitem{DrivePX}
+	NVIDIA,
+	``NVIDIA Drive PX'',
+	2017.
+	[Online]. Available:
+	\seqsplit{https://www.nvidia.com/en-us/self-driving-cars/drive-px/}.
+	[Accessed 21 Dec. 2017].
+	
 %	\bibitem{PrivacyPolicy}
 %	Volvo Cars Support,
 %	``CUSTOMER PRIVACY POLICY'',
@@ -379,13 +409,6 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 	2017.
 	[Online]. Available: \seqsplit{https://support.volvocars.com/uk/Pages/article.aspx?article=2f87dc53ab618edec0a801517aec401a}.
 	[Accessed 06 Dec. 2017].
-	
-	\bibitem{CitySafetyLegal}
-	Volvo Cars Support,
-	``City Safety'',
-	2017.
-	[Online]. Available: \seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=y555\&my=2018\&sw=17w17\&article=f11aa8c30d28b105c0a801e8005b64ab}.
-	[Accessed 12 Dec. 2017].
 	
 %	\bibitem{b1}  Mobileye. (2017) Industry Firsts. [Online]. Available: http://www.mobileye.com/about/industry-firsts/
 %	\bibitem{b3} Volvo Car Corporation. (2017, January). [Online]. Available: \seqsplit{https://www.media.volvocars.com/global/en-gb/media/pressreleases/202044/volvo-cars-and-autoliv-announce-the-launch-of-zenuity}
