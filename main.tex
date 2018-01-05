@@ -36,7 +36,7 @@ To be written.
 % ---------------------------------------------------------
 
 \section{Introduction}
-Autonomous vehicles (i.e.\ self-driving cars) are right around the corner with Volvo Cars aiming for a 2021 release to market.\cite{ADToMarket} Will it revolutionize the world or not? Who knows, what we do know is that the development had to start somewhere. One piece of the puzzle is to make the car have an automatic brake system. 
+Autonomous vehicles (i.e.\ self-driving cars) are right around the corner with Volvo Cars aiming for a 2021 release to market. \cite{ADToMarket} Will it revolutionize the world or not? Who knows, what we do know is that the development had to start somewhere. One piece of the puzzle is to make the car have an automatic brake system. 
 
 For example, imagine a car driving in the suburbs when suddenly a child accidentally kicks a ball onto the streets. The child makes a run for the ball, not aware of its surroundings. The driver brakes, but due to the reaction time of the driver the kid gets heavily injured. Now picture the same scenario with an automatic brake system. The car would be able to stop, by itself, in time and the accident would be avoided considering the car has (close to) no reaction time.
 
@@ -44,16 +44,16 @@ Another possible scenario is that the driver crashes into the rear-end of the ca
 
 An automatic brake system can, with it being always on, having close to no reaction time and using multiple sensors, potentially avoid, or at least mitigate, the hazardous situations presented above.
 
-With the driver being responsible for approximately 94\% of all car crashes, Volvo Cars, with its three key values, Environment, Quality and Safety, see great value in reducing those types of accidents.\cite{CrashStats,VolvoValues}
+With the driver being responsible for approximately 94\% of all car crashes, Volvo Cars, with its three key values, Environment, Quality and Safety, see great value in reducing those types of accidents. \cite{CrashStats,VolvoValues}
 
 \subsection{Volvo Cars}
 Volvo Cars has had a strong history of leading the industry when it comes to safety innovations with the three-point safety belt in 1959 and side impact protection, whiplash protection and roll-over protection in 1991, 1998 and 2002 respectively. 
-While most of the innovation in the safety field up to the early -00 where protective features newer innovations focus on proactive safety such as the blind spot information system which was introduced in 2003.\cite{VolvoInnovation}
+While most of the innovation in the safety field up to the early -00 where protective features newer innovations focus on proactive safety such as the blind spot information system which was introduced in 2003. \cite{VolvoInnovation}
 
 Volvo Cars has been offering an automatic brake system for rear-end collisions in its cars since 2008 and added a similar system for pedestrians in 2010. \cite{VolvoInnovation}
-These functions has since their introduction been standard in all models and was in 2015, soon after the release of the second generation of ``City Safety'', rebranded so that all their different versions of automatic braking where included in their trademark ``City Safety''.\cite{CitySafety}
+These functions has since their introduction been standard in all models and was in 2015, soon after the release of the second generation of ``City Safety'', rebranded so that all their different versions of automatic braking where included in their trademark ``City Safety''. \cite{CitySafety}
 
-With the announcement of the rebranding statistics proving the positive effect it has had on safety where provided and presented as a stepping stone towards autonomous vehicles.\cite{CitySafety}
+With the announcement of the rebranding statistics proving the positive effect it has had on safety where provided and presented as a stepping stone towards autonomous vehicles. \cite{CitySafety}
 
 \subsection{Zenuity}
 In April 2017, a joint venture between Volvo Cars and Autoliv started its operations with the purpose to develop autonomous driving and advanced driver assist systems (ADAS). With both Autoliv and Volvo Cars licensing and transferring relevant intellectual property and moving personnel over to Zenuity the development of ADAS functions moved from in-house development to a separate unit. Zenuity's software will be sold to both third parties through Autoliv as well as Volvo Cars directly. \cite{ZenuityLaunch} Since automatic brake systems are classified as ADAS these where most likely included in the transfer from Volvo Cars to Zenuity.
@@ -62,7 +62,7 @@ In April 2017, a joint venture between Volvo Cars and Autoliv started its operat
 Open source software (OSS) is a software open for anyone to read, modify and distribute. However, depending on the license of the OSS, tit might be more or less permissive. \cite{OSS}
 
 \subsection{Software Patents}
-Software patents are hard to grasp. From the beginning, patents were meant as a legal protection for inventors. Patents could be viewed as a reward and acknowledgment of a scientist's success, dedication and time spent on an invention. The patent itself gave the inventor monopoly of the invention and therefore protects from potential thieves who steal the idea and use it for their own purpose. \cite{SoftwarePatent} At that time, the kind of inventions would typically be a physical product such as post-office drawer lock.\cite{LockPatent}
+Software patents are hard to grasp. From the beginning, patents were meant as a legal protection for inventors. Patents could be viewed as a reward and acknowledgment of a scientist's success, dedication and time spent on an invention. The patent itself gave the inventor monopoly of the invention and therefore protects from potential thieves who steal the idea and use it for their own purpose. \cite{SoftwarePatent} At that time, the kind of inventions would typically be a physical product such as post-office drawer lock. \cite{LockPatent}
 
 A software program usually implies a computer program. The definition of a computer program is several lines of instruction given to a computer which will execute them sequentially. One may not patent the lines of instructions, however, in conjunction with an executing computer it can be patentable. The reasoning is that a software program needs to be part of a process and in this case an executing computer is considered a process. In Europe, The European Patent Convention (EPC) has taken the ``process'' definition a step further. \cite{SoftwarePatent}
 \begin{quotation}
@@ -73,7 +73,7 @@ To summarize, one cannot patent the software program code itself, but with some 
 \subsection{Big Data}
 Nowadays a company's big struggle is not to store all collected data, it is how to use it. The data is called ``Big Data''. \cite{ExploitBigData}
 
-Depending on the software, the collected data could be commute patterns, phone usage or as simple as the amount of user. With this kind of information, the company can make smart decisions. The downside is, the more data one got, the harder it is to process. To take fully advantage of the stored information the processing velocity is key. Another problem is the variety of data a company got. What information is in reality useful? \cite{SpeedDataEco} % TODO: Utveckla mer
+Depending on the software, the collected data could be commute patterns, phone usage or as simple as the amount of user. With this kind of information, the company can make smart decisions. The downside is, the more data one got, the harder it is to process. To take fully advantage of the stored information the processing velocity is key. Another problem is the variety of data a company got. What information is in reality useful? \cite{SpeedDataEco} 
 
 % ---------------------------------------------------------
 % --------------Description of the system  ----------------
@@ -85,10 +85,10 @@ The provided source describes the ``Collision Warning with Full Auto Brake and P
 The system consists of four main parts. The camera unit, the radar unit, the data fusion unit and a control unit for the automatic brake software. The control unit will communicate with the brake control unit, display control unit and sound control unit. The camera, radar and data fusion are all part of the unit, called ``RACam'', provided by Delphi. \cite{SysDescription,DelphiVolvo}
 
 \subsection{RACam}
-The data from the camera and radar are sent to the data fusion unit. The radar data is used for finding objects in front of the car and the distances to these objects. The camera image is used for classification of the found objects and therefore verifies whether they are vehicles, pedestrians, bicyclists or large animals, the unidentified objects are discarded\footnote{Which objects the ``RACam'' can identify depends which year model the car is.}. The data fusion helps reduce the risk of a false positive i.e. the car would brake without any real risks for collision.\cite{SysDescription}
+The data from the camera and radar are sent to the data fusion unit. The radar data is used for finding objects in front of the car and the distances to these objects. The camera image is used for classification of the found objects and therefore verifies whether they are vehicles, pedestrians, bicyclists or large animals, the unidentified objects are discarded\footnote{Which objects the ``RACam'' can identify depends which year model the car is.}. The data fusion helps reduce the risk of a false positive i.e. the car would brake without any real risks for collision. \cite{SysDescription}
 
 \subsection{Control unit for automatic brake}
-The control unit takes the calculations from the ``RACam'' and analyzes which objects are at risk of being hit based on their size, direction of movement and speed and the host car's speed and angle of the steering wheel. If an object is determined to be at risk a mathematical model is applied. If the model determines that the collision is imminent if the host car does not brake the brakes are applied and the car will be able to stop if the relative speed is 60 km/h or less\footnote{The limitations are different depending on the type of object in front \cite{CitySafetyDefinition}.} with the latest version. \cite{SysDescription, CitySafetyDefinition}
+The control unit takes the calculations from the ``RACam'' and analyzes which objects are at risk of being hit based on their size, direction of movement and speed and the host car's speed and angle of the steering wheel. If an object is determined to be at risk a mathematical model is applied. If the model determines that the collision is imminent if the host car does not brake the brakes are applied and the car will be able to stop if the relative speed is 60 km/h or less\footnote{The limitations are different depending on the type of object in front. \cite{CitySafetyDefinition}} with the latest version. \cite{SysDescription, CitySafetyDefinition}
 
 If the mathematical model determines that the risk of a collision is likely it will notify the display and sound control unit to warn the user with an icon and sound. The user will hopefully brake before the automatic braking needs to be activated. \cite{CitySafetyDefinition}
 
@@ -119,12 +119,12 @@ Why is uniqueness of great importance? Let us take an example. If there were two
 \subsubsection{Lacking infrastructure}
 Making functions OSS is a great way to move a function to the commoditized functionality layer to reduce ownership cost but a  reasonable explanation why this has not happened is that Volvo Cars is not mature enough as a software company to release open source software. It is only recently automakers have moved to large scale software development as they are traditionally hardware makers. Software giants such as Microsoft, who have been in the software industry for over 30 years, have not had any major presence in the OSS community until recently which gives some sort of indication of the difficulties with moving to OSS.
 
-In 2017 Volvo Cars announced a partnership with Google to use Android as the base operating system for the infotainment system\footnote{The infotainment system is the software running on the center stack display giving the user the ability to play music, change settings, get direction, etc.} in upcoming models.\cite{VolvoAndroid} This gives Volvo Cars, with minimal effort, the ability to build a light shell on top of a robust open source operating system instead of having the need to do this in house. As infotainment systems are more or less commodity this makes a resource intensive task, which does not add much customer value, a lot easier.
+In 2017 Volvo Cars announced a partnership with Google to use Android as the base operating system for the infotainment system\footnote{The infotainment system is the software running on the center stack display giving the user the ability to play music, change settings, get direction, etc.} in upcoming models. \cite{VolvoAndroid} This gives Volvo Cars, with minimal effort, the ability to build a light shell on top of a robust open source operating system instead of having the need to do this in house. As infotainment systems are more or less commodity this makes a resource intensive task, which does not add much customer value, a lot easier.
 
 There are a lot of questions around how to handle liability, different sensors, modularity, etc. when it comes to open sourcing safety features since it can have severe consequences. But it is easy to draw parallels between the move to android and the possibility that Volvo Cars will move toward more OSS in the future as features become commodity and Volvo Cars, and the rest of the industry, mature as software companies.
 
 \subsection{Patents}
-No patent could be found of Volvo Cars' automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. The reason it is difficult to get the system approved is that it requires the software system to be a part of a piece of hardware. It is no easy task to fulfill this requirement. The software might be using hardware that is already patented or that there are no isolated hardware Volvo Cars can patent with the software. 
+No patent could be found of Volvo Cars' automatic brake system. This may imply multiple things. For starters, it might mean that it is hard to get a patent of such software system. The reason it is difficult to get the system approved is that it requires the software system to be a part of a piece of hardware. It is no easy task to fulfil this requirement. The software might be using hardware that is already patented or that there are no isolated hardware Volvo Cars can patent with the software. 
 
 Another speculation of why Volvo Cars has no patent of the automatic brake system could be, once again, differentiation. One cannot stress enough the importance of being able to separate from its competitors. A patent will force the inventor to reveal the ``recipe'' and everyone can attempt to create the same product only using a different method. Volvo Cars does not want to share their ``secret sauce'' and therefore choose not to patent it. \cite{SoftwarePatent}
 
@@ -162,8 +162,9 @@ These two scenarios together could put City Safety, and there by Volvo Cars, in 
 \subsection{Future}
 The current implementation uses a mathematical model for decision-making but the possibility that future versions would be designed with machine learning, or more specifically deep learning, is probable. \cite{SysDescription} Automakers have lately seen the benefits deep learning could provide in the development of ADAS and autonomous driving technologies. This has manifested itself through the launch of NVIDIA Drive PX and the multiple partners involved (e.g. Volvo, Tesla and Mercedes-Benz). \cite{DrivePX} Machine learning requires big and versatile data sets which would give Volvo Cars an incentive to start collecting user data to improve the functionality.
 
-Data collection is nothing illegal as long as the user agrees to the terms. However, ethical speaking, one can argue if it should be allowed. A company may collect data, both sensitive and non-sensitive, from a user in order to process and do various operations. How the data is processed and used depends on the company, it can be showing relevant ads or used to get nearest hospital \cite{GoogleAds,GoogleNearby,GoogleUserData}. Some data may be harmless, such as a record of a purchase made a year ago. Certain data is essential, for instance one's bank account with transaction history and account balance. There are always two sides of the same coin and hence there is data that is sensitive and can be used against an individual. When using Google's army of products, one give up a hefty amount of information \cite{GoogleUserData}. Suppose the information gets in the wrong hands, it can revealed which removes the purpose of privacy. It has happened and it can happen again \cite{TheFappening,EdwardSnowden}. 
-Volvo
+Data collection is nothing illegal as long as the user agrees to the terms. However, ethical speaking, one can argue if it should be allowed. A company may collect data, both sensitive and non-sensitive, from a user in order to process and do various operations. How the data is processed and used depends on the company, it can be showing relevant ads or used to get nearest hospital. \cite{GoogleAds,GoogleNearby,GoogleUserData} Some data may be harmless, such as a record of a purchase made a year ago. Certain data is essential, for instance one's bank account with transaction history and account balance. There are always two sides of the same coin and hence there is data that is sensitive and can be used against an individual. When using Google's army of products, one give up a hefty amount of information. \cite{GoogleUserData} Suppose the information gets in the wrong hands, it can revealed which removes the purpose of privacy. It has happened and it can happen again. \cite{TheFappening,EdwardSnowden} 
+
+Volvo . \cite{PrivacyPolicy}
 
 % City safety activates and affect the driving. Should a software program be able to be in somewhat control in traffic? One might say that it is not ethical that a program can be the deciding in a life and death situation. After all, the driver should always be alert and in control. If it is possible for the software to make even one mistake, e.g. an incorrect brake, 
 
@@ -356,13 +357,13 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 	\seqsplit{https://www.nvidia.com/en-us/self-driving-cars/drive-px/}.
 	[Accessed 21 Dec. 2017].
 	
-%	\bibitem{PrivacyPolicy}
-%	Volvo Cars Support,
-%	``CUSTOMER PRIVACY POLICY'',
-%	2017.
-%	[Online]. Available:
-%	\seqsplit{https://support.volvocars.com/uk/pages/article.aspx?article=58bd8ef320c39971c0a801513f4e18ef}.
-%	[Accessed 06 Dec. 2017].
+	\bibitem{PrivacyPolicy}
+	Volvo Cars Support,
+	``CUSTOMER PRIVACY POLICY'',
+	2017.
+	[Online]. Available:
+	\seqsplit{https://support.volvocars.com/uk/pages/article.aspx?article=58bd8ef320c39971c0a801513f4e18ef}.
+	[Accessed 06 Dec. 2017].
 	
 	\bibitem{GoogleAds}
 	Google, 
