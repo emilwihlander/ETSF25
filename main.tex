@@ -62,7 +62,7 @@ In April 2017, a joint venture between Volvo Cars and Autoliv started its operat
 Open source software (OSS) is a software open for anyone to read, modify and distribute. However, depending on the license of the OSS, tit might be more or less permissive. \cite{OSS}
 
 \subsection{Software Patents}
-Software patents are hard to grasp. From the beginning, patents were meant as a legal protection for inventors. Patents could be viewed as a reward and acknowledgment of a scientist's success, dedication and time spent on an invention. The patent itself gave the inventor monopoly of the invention and therefore protects from potential thieves who steal the idea and use it for their own purpose. \cite{SoftwarePatent} At that time, the kind of inventions would typically be a physical product such as post-office drawer lock. \cite{LockPatent}
+Software patents are hard to grasp, from the beginning patents were meant as a legal protection for inventors. Patents could be viewed as a reward and acknowledgment of a scientist's success, dedication and time spent on an invention. The patent itself gave the inventor monopoly of the invention and therefore protects from potential thieves who steal the idea and use it for their own purpose. \cite{SoftwarePatent} At that time, the kind of inventions would typically be a physical product such as post-office drawer lock. \cite{LockPatent}
 
 A software program usually implies a computer program. The definition of a computer program is several lines of instruction given to a computer which will execute them sequentially. One may not patent the lines of instructions, however, in conjunction with an executing computer it can be patentable. The reasoning is that a software program needs to be part of a process and in this case an executing computer is considered a process. In Europe, The European Patent Convention (EPC) has taken the ``process'' definition a step further. \cite{SoftwarePatent}
 \begin{quotation}
@@ -175,11 +175,11 @@ The current implementation uses a mathematical model for decision-making but the
 % ---------------------------------------------------------
 
 \section{Legal aspects}
-No source could be found that can verify whether Volvo's automatic brake system is collecting data to a central server or not. Considering that there is no disclaimer, no information it is therefore quite likely that, currently, the system is not collecting data. No Internet connection is built in by default which strengthens previous statement \cite{SensusConnect}. However, in the future, there is a great chance that Volvo will store and utilize user data.
+No source could be found that can verify whether Volvo's automatic brake system is collecting data to a central server or not. As mentioned before, it is quite likely that, currently, the system is not distributing the gathered images to an entity outside of the car. No Internet connection is built in by default which strengthens previous statement \cite{SensusConnect}. However, in the future, there is a great chance that Volvo will store and utilize the gathered data.
 
 Data collection links to Big Data, which might be essential for City Safety in the future. As mentioned, with Big Data smart decisions can be made, but collecting data such as the car's position and the video recording of its surroundings disrupt the privacy\footnote{As can be seen in figure 1 and 7 in \cite{SysDescription}.}.  Where ever the chauffeur drives, someone can be watching and take advantage of the geographical position. The owner should be aware of this when purchasing, so in a way, it is his/her own choice of potentially being monitored. What if it is never disclaimed at purchase? The clueless person who is acquiring a car does not know that his/her position is observed. \textbf{Couldn't find if it is illegal or not.}.
 
-Other collected data may be the recording of its surroundings, which the pedestrians are totally unaware of. They did not get the opportunity of choosing whether they wanted to be observed by cars or not. At least the buyer of the car chooses, hopefully aware, of having his/her position tracked. Surprisingly this is not illegal unless recording military vehicle or a prohibited area. \textbf{add source}
+City Safety requires a video feed of the cars surroundings, which the pedestrians may be unaware of. They did not get the opportunity of choosing whether they wanted to be observed by cars or not. At least the buyer of the car chooses, hopefully aware, of having his/her position tracked. Surprisingly this is not illegal unless recording military vehicle or a prohibited area. \textbf{add source}
 
 If City Safety missed a critical brake, who will be responsible? According to the disclaimer on Volvo's website it is always the driver's responsibility and should never, deliberately, wait for City Safety to activate. \cite{CitySafetyLegal}
 
@@ -351,22 +351,6 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 	[Online]. Available: \seqsplit{https://support.volvocars.com/uk/cars/pages/owners-manual.aspx?mc=y555\&my=2018\&sw=17w17\&article=f11aa8c30d28b105c0a801e8005b64ab}.
 	[Accessed 12 Dec. 2017].
 	
-	\bibitem{DrivePX}
-	NVIDIA,
-	``NVIDIA Drive PX'',
-	2017.
-	[Online]. Available:
-	\seqsplit{https://www.nvidia.com/en-us/self-driving-cars/drive-px/}.
-	[Accessed 21 Dec. 2017].
-	
-	\bibitem{PrivacyPolicy}
-	Volvo Cars Support,
-	``CUSTOMER PRIVACY POLICY'',
-	2017.
-	[Online]. Available:
-	\seqsplit{https://support.volvocars.com/uk/pages/article.aspx?article=58bd8ef320c39971c0a801513f4e18ef}.
-	[Accessed 06 Dec. 2017].
-	
 	\bibitem{GoogleAds}
 	Google, 
 	``Google Privacy | Why data protection matters'',
@@ -406,6 +390,22 @@ An incorrect brake, legally speaking, is Volvo's fault and will take full respon
 	[Online]. Available: \seqsplit{https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance.}.
 	[Accessed 15 Dec. 2017].
 	
+	\bibitem{PrivacyPolicy}
+	Volvo Cars Support,
+	``CUSTOMER PRIVACY POLICY'',
+	2017.
+	[Online]. Available:
+	\seqsplit{https://support.volvocars.com/uk/pages/article.aspx?article=58bd8ef320c39971c0a801513f4e18ef}.
+	[Accessed 06 Dec. 2017].
+	
+	\bibitem{DrivePX}
+	NVIDIA,
+	``NVIDIA Drive PX'',
+	2017.
+	[Online]. Available:
+	\seqsplit{https://www.nvidia.com/en-us/self-driving-cars/drive-px/}.
+	[Accessed 21 Dec. 2017].
+	
 	\bibitem{SensusConnect}
 	Volvo Cars Support,
 	``Sensus Connect'',
@@ -437,6 +437,10 @@ The introduction until the first subsection where written in collaboration.
 	Business aspects from beginning until the paragraph beginning with ``The automatic brake system is not OSS''.
 	\item
 	The subsections Lacking infrastructure, Zenuity and Summary of Business aspects.
+	\item
+	All of Ethical aspects except ``Data Collection".
+	\item
+	Made the songs ``Stop the Show" and ``Fireflies".
 \end{itemize}
 \subsection{Jakob}
 \begin{itemize}
@@ -445,7 +449,9 @@ The introduction until the first subsection where written in collaboration.
 	\item
 	The paragraph beginning with ``The automatic brake system is not OSS'' and the subsections Differentiation and Patents of Business aspects.
 	\item
-	All of Legal aspects and Ethical aspects.
+	``Data Collection" in Ethical aspects.
+	\item
+	All of Legal aspects.
 \end{itemize}
 
 \end{document}
