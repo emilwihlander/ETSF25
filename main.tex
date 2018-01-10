@@ -80,7 +80,12 @@ Nowadays a company's big struggle is not to store all collected data, it is how 
 \section{Description of the system}
 The provided source describes the ``Collision Warning with Full Auto Brake and Pedestrian Detection'' system which is a complement to the first generation of ``City Safety''. The second generation (current) ``City Safety'' uses similar hardware, with the exception that the radar (and camera) is located at the top of the windscreen rather than in the grille, it will therefore be assumed that the systems are similar. \cite{SysDescription,RACam,DelphiVolvo}
 
-The system consists of four main parts. The camera unit, the radar unit, the data fusion unit and a control unit for the automatic brake software. The control unit will communicate with the brake control unit, display control unit and sound control unit. The camera, radar and data fusion are all part of the unit, called ``RACam'', provided by Delphi. \cite{SysDescription,DelphiVolvo}
+The system consists of four main parts. The camera unit, the radar unit, the data fusion unit and a control unit for the automatic brake software. The control unit will communicate with the brake control unit, display control unit and sound control unit. The camera, radar and data fusion are all part of the unit, called ``RACam'', provided by Delphi. \cite{SysDescription,DelphiVolvo} No information was found that any open source software is used in the system.
+
+\begin{figure}
+	\includegraphics[scale=0.25]{overview.png}
+	\caption{1. is the ``RaCam'', 2. is the display and sound control unit and 3. is the brake control unit. (The locations for all control units except the ``RaCam'' are guesses).}
+\end{figure}
 
 \subsection{RACam}
 The data from the camera and radar are sent to the data fusion unit. The radar data is used for finding objects in front of the car and the distances to these objects. The camera image is used for classification of the found objects and therefore verifies whether they are vehicles, pedestrians, bicyclists or large animals. The unidentified objects are discarded\footnote{Which objects the ``RACam'' can identify depends which year model the car is.}. The data fusion helps reduce the risk of a false positive i.e. the car would brake without any real risks for collision. \cite{SysDescription}
